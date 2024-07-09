@@ -51,3 +51,16 @@ body{
 .menu .navbar ul li a:hover{
     color: #F2E205;
 }
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
