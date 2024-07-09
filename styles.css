@@ -112,3 +112,85 @@ body{
     text-align: center;
     font-size: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+    .menu{
+        padding: 20px;
+    }
+    
+    
+    .menu label{
+        display: initial;
+    }
+    
+    
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #F272B8 ;
+        display: none;
+    }
+    
+    
+    .menu .navbar ul li a:hover{
+        color: #0511F2;
+    }
+    
+    
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .contenedor2{
+    }
+
+.contenedor2 h1{
+    text-align: justify;
+    font-size: 30px;
+    margin-left: 20px;
+
+    }
+
+}
