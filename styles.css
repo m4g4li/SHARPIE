@@ -39,3 +39,11 @@ body{
     position: relative;
     float: left;
 }
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #F20505;
+    font-weight: 600;
+    display: block;
+}
