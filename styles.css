@@ -34,3 +34,8 @@ body{
     justify-content: space-between;
     font-family:"Montserrat", sans-serif;
 }
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
