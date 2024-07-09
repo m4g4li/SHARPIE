@@ -1,2 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    color: #F272B8 ;
+    color: #0511F2;
+    color: #F2E205;
+    color: #F20505;
+    color: #F2F2F2;
+    color: #0D0D0D;
+}
