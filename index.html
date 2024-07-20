@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/icon.png">
-    <title>SHARPIE</title>
+    <link rel="stylesheet" href="styles.css"><!-- enlace del css -->
+    <link rel="shortcut icon" href="img/icon.png"><!-- icono de la pestaña -->
+    <title>NAVBAR</title>
 </head>
+
 <body>
-    <header class="header">
 
-        <div class="menu container">
-            <a href="#" class="logo"><img src="img/logo.png" alt="logo" width="100px"></a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="img/menu.png" class="menu-icono" alt="menu">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Markers</a></li>
-                    <li><a href="#">Pens</a></li>
-                    <li><a href="#">Highlighters</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
+    <section class="inicio"><!-- primera sección donde se encuentra el header(logo), nav(menu) y el div(container)-->
+    
+        <header>
+            <a href="#" class="logo"><img src="img/logo.gif" alt="logo" width="100px"></a>
+            <div class="toggle"></div><!-- permite que el icono del menu sea visible y funcional tiene que ver más con el codigo de javascript -->
+        </header>
 
-                </ul>
-            </nav>
+        <nav><!-- enlaces del menu hamburguesa -->
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Marcadores</a></li>
+                <li><a href="#">Bolígrafos</a></li>
+                <li><a href="#">Resaltadores</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Inspírate</a></li>
+                <li><a href="#"><img src="img/support.png" alt="support"></a></li><!-- en este caso la imagen reemplaza al texto para la sección de suppor. La imagen sirve igual de enlace -->
+            </ul>
+        </nav>
+        
+        
+        <div class="container"><!-- Contiene el texto incial que desaparece al hacer click en el menu, unicamente en esta seccion desaparece el contenido cuando esta visible el menu -->
+            <div class="content">
+                <h1>DESCUBRE TU CREATIVIDAD.</h1>
+                <h3>Dibuja tus sueños con SHARPIE.</h3>
+            </div>
         </div>
-    </header>
 
-    <section id="seccion1">
-        <div class="contenedor1">
+    </section>
+
+
+
+    <section class="seccion1"><!-- sección creada como relleno-->
+
+    </section>
+
+
+
+    <section class="seccion2"><!-- sección creada como relleno-->
+
+        <div class="container2">
             <div class="slider">
                   <ul>
                         <li><a href="#"><img src="img/1.png"/></a></li>
@@ -40,15 +58,50 @@
                   </ul>
             </div>
         </div>
+        
     </section>
 
-    <section id="seccion2">
-        <div class="contenedor2">
-            <h1>Dibuja tus sueños con SHARPIE</h1>
+        
 
+    <section class="contacto">
+
+        <ul class="redes"><!-- redes sociales -->
+            <li><a href="https://www.instagram.com/sharpie/" target="_blank"><img src="img/instagram.png" alt="instagram" ></a></li>
+            <li><a href="https://www.facebook.com/Sharpie" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://x.com/sharpie" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.youtube.com/user/SharpieUS" target="_blank"><img src="img/youtube.png" alt="youtube"></a></li>
+        </ul>
+
+
+        <div class="newsletter"><!-- formulario del newsletter -->
+            <h2>Suscríbete a nuestro Newsletter</h2>
+            <form id="newsletter-form">
+                
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Suscribirse</button>
+
+            </form>
+            <p id="message" class="hidden"></p> <!-- mensaje que aparecera al ingresar de manera correcta o incorrecta el email-->
         </div>
 
     </section>
+  
+
+
+    <footer>
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+        <h6>© 2024 All Rights Reserved</h6>
+    </footer>
+
+
     
+
+
+
+
+
+    
+    <script src="menu.js"></script><!-- enlace de javascript funcionalidad menu -->
+    <script src="newsletter.js"></script><!-- enlace de javascript formulario newsletter -->
 </body>
 </html>
