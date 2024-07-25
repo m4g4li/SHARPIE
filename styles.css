@@ -289,7 +289,7 @@ button:hover {
 .redes{
     position: absolute;
     right: 350px;
-    top: 200px;
+    top: 100px;
     gap: 70px;
     display: flex;
     transition: 0.5s;
@@ -459,6 +459,10 @@ footer h6{
     
     .seccion2{
         background-color: #F272B8;
+    }
+
+    .contacto{
+        min-height: 520px;
     }
 
     .newsletter h2{
