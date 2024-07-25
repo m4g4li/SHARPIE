@@ -19,7 +19,6 @@
 section{
     position: relative;
     width: 100%;
-    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
     padding: 0 100px;
     display: flex;
     align-items: center;
@@ -28,6 +27,7 @@ section{
 
 .inicio{
     background-color: #0511F2;
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
 }
 
 .inicio.active::before{
@@ -149,6 +149,7 @@ header .toggle.active{
 
 
 .seccion1{/*sección creada solo para visualizar como se ve una imagen de fondo*/
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
     background-image: url(img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -158,6 +159,7 @@ header .toggle.active{
 
 
 .seccion2{/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
     background-color: #F20505;
 }
 
@@ -204,6 +206,7 @@ header .toggle.active{
 
 /*sección de redes sociales de la marca*/
 .contacto{
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
     position: relative;
     background-color: #0511F2;
     background-image: url(img/bg2.png);
@@ -214,7 +217,7 @@ header .toggle.active{
 }
 
 .newsletter{
-    background-image: url(img/post-it1.png);/*imagen como fondo*/
+    background-image: url(img/bg.png);/*imagen como fondo*/
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -324,26 +327,31 @@ button:hover {
 
 
 footer {
-    background-color: #0D0D0D;
+    min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    height: 40px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 40px 0;
-    padding-left: 100px;
+    gap: 30px;
+    padding-top: 50px;
+    
+   
 }
 
 footer a img{
     width: 100px;
+    justify-content: center;
 }
 
 
 footer h6{
     display: flex;
     font-family:"Montserrat", sans-serif;
-    color: #F2F2F2;
+    color: #0D0D0D;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 100px;
 }
 
@@ -479,10 +487,14 @@ footer h6{
     }
 
     footer {
+        background-image: url(img/contact2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-left: 40px;
     }
 
     footer h6{
+        font-weight: 600;
         margin-right: 40px;
     }
 
