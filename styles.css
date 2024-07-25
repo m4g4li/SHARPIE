@@ -243,7 +243,7 @@ form {
     margin-left: 50px;
     padding-top: 10px; 
     position: relative;
-    z-index: 9;
+    z-index: 9;/*controla que elemento se mostrara o actuara antes*/
 }
 
 input[type="email"] { /*estilos que se le agregan al ingresar la dirección de correo*/
@@ -254,6 +254,8 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
     font-family:"Montserrat", sans-serif;
     font-size: 16px;
     max-width: 250px;
+    z-index: 9;
+    
 }
 
 button {
@@ -293,6 +295,7 @@ button:hover {
     gap: 70px;
     display: flex;
     transition: 0.5s;
+    z-index: 10;/*controla que elemento se mostrara o actuara antes*/
 }
 
 .redes li{
@@ -471,6 +474,10 @@ footer h6{
         font-weight: 600;
         font-size: 15px;
         text-align: right;
+    }
+
+    form{
+        z-index: 10;
     }
 
     #message {
