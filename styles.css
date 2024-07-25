@@ -206,7 +206,7 @@ header .toggle.active{
 
 /*sección de redes sociales de la marca*/
 .contacto{
-    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
     position: relative;
     background-color: #0511F2;
     background-image: url(img/bg.png);
@@ -216,6 +216,7 @@ header .toggle.active{
     height: 0;
     
 }
+
 
 .newsletter{
     background-image: url(img/post-it1.png);/*imagen como fondo*/
