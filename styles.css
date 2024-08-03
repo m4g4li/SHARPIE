@@ -38,3 +38,11 @@ section{
     content: '';
     box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
 }
+
+.inicio.active .menu{
+    opacity: (1);
+    visibility: visible;/*Sea visible el menu*/
+    transition-delay: 0.1s;
+}
+
+
