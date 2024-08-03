@@ -776,4 +776,48 @@ header .toggle.active{
 
 
 
+.seccion9{/*sección RESALTADOR*/
+    min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0511F2;
+    background-position: center;
+} 
+
+.seccion9 .container9{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.seccion9 .container9 img{
+    float: right;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.seccion9 .container9 .text9{
+    max-width: 500px; 
+}
+
+.seccion9 .container9 h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 50px;
+    padding-top: 0px;
+}
+
+.seccion9 .container9 p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 80px;
+}
+
+
+
+
+
 
