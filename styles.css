@@ -208,3 +208,12 @@ header .toggle.active{
 
 
 
+
+.seccion1{/*sección VIDEO*/
+    background-image: none;
+    min-height: 660px;/* altura mínima que sera aplicada a cada sección*/ 
+}
+
+
+
+
