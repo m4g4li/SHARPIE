@@ -600,5 +600,49 @@ header .toggle.active{
 
 
 
+.seccion7{/*sección BOLIGRAFO*/
+    min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0511F2;
+} 
+
+.seccion7 .container7{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.seccion7 .container7 img{
+    float: left;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.seccion7 .container7 .text7{
+    float: right;
+    padding-top: 0px;
+    max-width: 500px; 
+}
+
+.seccion7 .container7 h2{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    padding-top: 0px;
+}
+
+.seccion7 .container7 p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+
+
+
 
 
