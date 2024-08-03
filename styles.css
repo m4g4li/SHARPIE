@@ -125,5 +125,9 @@ header .toggle.active{
     width: 250px;
 }
 
+.inicio.active .marker{
+    transform: scale(0); /* Desaparezca el marcador en el menu */
+}
+
 
 
