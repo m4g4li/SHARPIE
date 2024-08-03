@@ -477,3 +477,83 @@ header .toggle.active{
 
 
 
+.seccionboligrafo{/*sección ANIMACIÓN BOLIGRAFO*/
+    min-height: 100px;
+    background-image: url(img/line3.png);
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+}
+
+/*.seccionboligrafo h1{
+    font-family: "Permanent Marker", cursive;
+    color: #F20505;
+    font-size: 60px;
+    padding-left: 70px;
+    padding-top: 110px;
+}*/
+
+.pen-text {/*Texto boligrafo*/
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-left: 300px;
+    margin-top: 30px;
+    height: 50px;
+}
+    
+.pen-text {
+    font-size: 2em;
+    color: transparent;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    
+.pen-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0D0D0D; /* Color del marcador */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: write 7s steps(40, end)infinite; 
+}
+    
+@keyframes write {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+.creative2{/*imagenes que enlaza con la pestaña de boligrafos*/
+    height: 0px;
+}
+  
+.products2{
+    position: absolute;
+    right: 0;
+    top: 15px;/*aparezcan abajo 480px o 800*/
+    z-index: 2;
+}
+  
+.products2 ul{
+    list-style: none;   
+}
+  
+.products2 ul li a{
+    display: inline-block;
+    padding: 0px;
+    -webkit-transition: all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition: all 50ms ease;
+}
+  
+.products2 ul li a:hover{
+    padding: 5px 30px;
+    background: transparent;	
+}
+
+
+
+
