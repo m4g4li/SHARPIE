@@ -72,5 +72,13 @@ header .toggle{
     cursor: pointer;
 }
 
+/* icono de menu x*/
+header .toggle.active{
+    background-image: url(img/closed.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
 
 
