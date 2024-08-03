@@ -849,6 +849,15 @@ header .toggle.active{
     background-repeat: no-repeat;/*para que no se repita la imagen de fondo*/
 }
 
+.newsletter h2{
+    font-family:"Montserrat", sans-serif;
+    color: #0511F2;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 110px;
+    margin-right: 750px;
+}
+
 
 
 
