@@ -23,3 +23,13 @@ section{
     padding: 0 100px;
     display: flex;
 }
+
+
+
+
+.inicio{
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
