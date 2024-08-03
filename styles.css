@@ -33,3 +33,8 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.inicio.active::before{
+    content: '';
+    box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
+}
