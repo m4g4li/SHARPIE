@@ -877,6 +877,26 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
     max-width: 250px;
 }
 
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0D0D0D;
+    font-family:"Montserrat", sans-serif;
+    color: #F2F2F2;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+button:hover {
+    background-color: #F20505;
+}
+
+.hidden {
+    display: none;
+}
+
 
 
 
