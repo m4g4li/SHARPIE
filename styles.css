@@ -110,5 +110,10 @@ header .toggle.active{
     transition: 0.1s;/*tiempo paara que desaparezca el menu deplegado*/
 }
 
+.menu li:hover a{
+    letter-spacing: 5px; /*efecto sobre los enlace que se vea con separación cada letra*/
+    color: #F2F2F2;
+}
+
 
 
