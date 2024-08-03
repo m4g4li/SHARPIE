@@ -120,25 +120,31 @@ header .toggle.active{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s; /*transión del contenido al menu y viceversa*/
+    background-image: none;
+    min-height: 500px;/* altura mínima que sera aplicada a cada sección*/
 }
+
 
 .container .content{
     position: relative;
-    max-width: 900px;
     z-index: 100;
+    padding-top: 500px;
 }
 
-.container .content h1{
-    font-family: "Permanent Marker", cursive;
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.container .content h3{
+.container .content a{
+    background-color:transparent;
+    color: #F20505;
+    display: inline-block;
     font-family:"Montserrat", sans-serif;
     font-size: 20px;
-    text-align: left;
-    margin-bottom: 20px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.container .content a:hover{
+    background-color: #F2F2F2;
 }
 
 .inicio.active .container{
