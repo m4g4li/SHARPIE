@@ -950,6 +950,38 @@ button:hover {
 
 
 
+footer {
+    min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    
+   
+}
+
+footer a img{
+    width: 100px;
+    justify-content: center;
+}
+
+
+footer h6{
+    display: flex;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+
+
+
 
 
 
