@@ -154,11 +154,22 @@ header .toggle.active{
 
 
 
+
 .seccion1{/*sección creada solo para visualizar como se ve una imagen de fondo*/
     min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
     background-image: url(img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.seccion1 video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
