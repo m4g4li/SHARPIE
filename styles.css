@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 
@@ -14,4 +15,11 @@
     color: #F20505;
     color: #F2F2F2;
     color: #0D0D0D;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
 }
