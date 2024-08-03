@@ -985,3 +985,284 @@ footer h6{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*agregarle reponsividad a la página*/
+
+@media(max-width:991px){
+    
+    section{
+        padding: 40px;
+    }
+
+    .creative{
+        transform: scale();
+    }
+
+    .products{
+        top: 488px;
+    }
+
+    header{
+        padding: 20px 40px;
+    }
+
+    .marker{
+        right: 10px;
+        opacity: 0.3;
+        top: 80px;
+    }
+
+    .container .content h1{
+        font-size: 20px;
+    }
+
+    .menu{
+        padding: 0;
+        align-items: center;
+    }
+
+    .menu li a{
+        font-size: 30px;
+    }
+
+    .seccion1{
+        min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+    }
+
+    /* .seccion1 video{
+        margin-top: 25% ;
+        height: 50%;
+        margin-bottom: 25% ;
+    }*/
+
+    .seccionmarcador{/*sección ANIMACIÓN MARCADOR*/
+        background-color: #F2E205;
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .marcador-text{
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .seccion2{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #F20505;
+        background-image: none;
+    }
+
+    .seccion2 .container2 img{
+        margin-left: -20px;
+    }
+
+    .seccion2 .container2 p{
+
+    }
+
+    .seccion3{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+        background-image: none;
+    }
+
+    .seccion3 .container3 img{
+        margin-right: -20px;
+      
+    }
+
+    .seccion3 .container3 p{
+
+    }
+
+    .seccion4{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #F20505;
+        background-image: none;
+    }
+
+    .seccion4 .container4 img{
+        margin-left: -20px;
+      
+    }
+
+    .seccion4 .container4 p{
+
+    }
+
+    .seccion5{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+        background-image: none;
+    }
+
+    .seccion5 .container5 img{
+        margin-right: -20px;
+      
+    }
+
+    .seccion5 .container5 p{
+
+    }
+
+    .seccionboligrafo{/*sección ANIMACIÓN MARCADOR*/
+        background-color: #F2E205;
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .pen-text{
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .seccion6{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #F20505;
+        background-image: none;
+    }
+
+    .seccion6 .container6 img{
+        margin-right: -20px;
+      
+    }
+
+    .seccion6 .container6 p{
+
+    }
+
+    .seccion7{
+        min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+        background-image: none;
+    }
+
+    .seccion7 .container7 img{
+        margin-left: -20px;
+        margin-bottom: -100px;
+      
+    }
+
+    .seccion7 .container7 p{
+
+    }
+
+
+
+    .seccionresaltador{/*sección ANIMACIÓN MARCADOR*/
+        background-color: #F2E205;
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .resaltador-text{
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .seccion8{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #F20505;
+        background-image: none;
+    }
+
+    .seccion8 .container8 img{
+        margin-left: -20px;
+      
+    }
+
+    .seccion8 .container8 p{
+
+    }
+
+    .seccion9{
+        min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+        background-image: none;
+    }
+
+    .seccion9 .container9 img{
+        margin-right: -20px;
+      
+    }
+
+    .seccion9 .container9 p{
+
+    }
+
+    .contacto{
+        min-height: 520px;
+    }
+
+    .newsletter h2{
+        width: 300px;
+        color: #0511F2;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    form{
+        z-index: 10;
+    }
+
+    #message {
+        margin-top: 20px;
+    }
+   
+    .redes{
+        padding-top: 350px;
+        margin-right: -200px;
+        gap: 5px;
+    }
+
+    .redes li a img{
+        width: 50px;
+    }
+
+    .redes li a{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        background-image: url(img/contact2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 40px;
+    }
+
+    footer h6{
+        font-weight: 600;
+        margin-right: 40px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
