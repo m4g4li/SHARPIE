@@ -858,6 +858,25 @@ header .toggle.active{
     margin-right: 750px;
 }
 
+form {
+    display: flex;
+    flex-direction: column; /*aparezca primero la casilla de email y luego el botón*/
+    margin-left: 50px;
+    padding-top: 10px; 
+    position: relative;
+    z-index: 9;/*controla que elemento se mostrara o actuara antes*/
+}
+
+input[type="email"] { /*estilos que se le agregan al ingresar la dirección de correo*/
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 16px;
+    max-width: 250px;
+}
+
 
 
 
