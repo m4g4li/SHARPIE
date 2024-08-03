@@ -644,5 +644,91 @@ header .toggle.active{
 
 
 
+.seccionresaltador{/*sección ANIMACIÓN RESALTADOR*/
+    min-height: 150px;
+    background-image: url(img/line3.png);
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/*.seccionresaltador h1{
+    font-family: "Permanent Marker", cursive;
+    color: #F20505;
+    font-size: 60px;
+    padding-left: 70px;
+    padding-top: 110px;
+}*/
+
+.resaltador-text{
+   
+    display: flex;
+    height: 40px;
+    margin-top: 30px;
+    height: 50px;
+    z-index: 10;
+}
+
+.resaltador-text {
+    position: relative;
+    font-size: 40px;
+    color: #0D0D0D;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.resaltador-text::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.6em;
+    background: #F272B8;
+    align-content: center;
+    align-items: center;
+    z-index: -1;
+    transform: translateY(-50%);
+    animation: resaltador 3s infinite;
+}
+
+@keyframes resaltador {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.creative3{/*imagenes que enlazan con la pestaña de resaltadores*/
+    height: 0px;
+}
+  
+.products3{
+    position: absolute;
+    right: 0;
+    top: 15px;/*aparezcan abajo 480px o 800*/
+    z-index: 2;
+}
+  
+.products3 ul{
+    list-style: none;   
+}
+  
+.products3 ul li a{
+    display: inline-block;
+    padding: 0px;
+    -webkit-transition: all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition: all 50ms ease;
+}
+  
+.products3 ul li a:hover{
+    padding: 5px 30px;
+    background: transparent;	
+}
+
+
+
 
 
