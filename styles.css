@@ -829,5 +829,18 @@ header .toggle.active{
 
 
 
+.contacto{/*sección de redes sociales de la marca*/
+    min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
+    position: relative;
+    background-image: url(img/bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 0;
+}
+
+
+
+
 
 
