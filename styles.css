@@ -897,6 +897,13 @@ button:hover {
     display: none;
 }
 
+#message { /*estilos agregados al mensaje que aparecera luego de ingresar el correo */
+    font-family:"Montserrat", sans-serif;
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 
 
 
