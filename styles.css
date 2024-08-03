@@ -99,5 +99,16 @@ header .toggle.active{
     visibility:hidden; /*Asi es como logramos que el menu no sea visible hasta presionar menu hamburguesa*/
 }
 
+.menu li a{ /*estilos a los enlaces del menu*/
+    color: #F20505;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 5px 10px;
+    margin:  5px 0;
+    display: inline-block;
+    transition: 0.1s;/*tiempo paara que desaparezca el menu deplegado*/
+}
+
 
 
