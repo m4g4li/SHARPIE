@@ -266,7 +266,7 @@ header .toggle.active{
     left: 0;
     width: 100%;
     height: 100%;
-    color: #F20505; /* Color del marcador */
+    color: #0511F2; /* Color del marcador */
     overflow: hidden;
     white-space: nowrap;
     animation: write 7s steps(40, end) infinite;
