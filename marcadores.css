@@ -1,0 +1,39 @@
+
+.altura {
+    height: 400px;
+}
+
+.img-carousel {
+    height: 400px;
+    width: 400px;
+}
+
+@media (max-width: 992px) {
+    .altura {
+        height: auto;
+    }
+    .img-carousel {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bg-claro {
+    background-color: #f2f2f2;
+}
+
+.bg-imagen {
+    background-image: url('./img/bg-card.jpg');
+}
+
+.bg-azul {
+    background-color: #0511f2;
+}
+
+.bg-rosa {
+    background-color: #f272b8;
+}
+
+.bg-amarillo {
+    background-color: #f2e205;
+}
