@@ -170,17 +170,6 @@ header .toggle.active{
     background-repeat: no-repeat;
 }
 
-.seccion1 video{
-    z-index: 000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
 
 
 .seccion2{/*sección donde se encuentra la diapositiva infinita*/
@@ -224,6 +213,15 @@ header .toggle.active{
   
   70%{ margin-left: -200%;}
   100%{ margin-left: -200%;}
+}
+
+
+
+.seccionb{/*BANNER*/
+    min-height: 210px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
