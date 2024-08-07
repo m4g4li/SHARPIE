@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root { /*Paleta de color, luego de usarla se puede borrar porque no hace nada */
+    --color-pink: #F272B8;
+    --color-blue: #0511F2;
+    --color-yellow: #F2E205;
+    --color-red: #F20505;
+    --color-white: #F2F2F2;
+    --color-black: #0D0D0D;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.seccion2{/*sección CAROUSEL 1*/
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F20505;
+}
+
+
+.seccion2 .container2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion2 .container2 .slider{
+    position: absolute;
+    inset: 50px 800px 50px 50px; /* Tamaño destinado a las imagenes, 800px se ven cuadradas*/
+    background: #F272B8;
+    border-radius: 20px;
+}
+
+.seccion2 .container2 .slider .slides{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 320px;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 10px #0D0D0D;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(1),
+.seccion2 .container2 .slider .slides:nth-child(2) 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(3) 
+{
+    left: calc(50% + 240px);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(4) 
+{
+    left: calc(50% + 500px);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(5) 
+{
+    left: calc(50% + 760px);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(6) 
+{
+    left: calc(50% + 1020px);
+    background-size: cover;
+    opacity: 0;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons span{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.buttons span::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #F2F2F2;
+    border-left: 4px solid #F2F2F2;
+    transform: rotate(315deg) translate(2px, 2px);
+}
+
+.buttons span:nth-child(2)::before{
+    transform: rotate(135deg) translate(2px, 2px);
+}
+
+.buttons span:active{
+    opacity: 0.5;
+}
+
+
+.seccion2 .container2 .cardcontent{
+    position: relative;
+    padding: 30px;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    max-width: 600px;
+    transition: 0.25s;
+    transition-delay: 0s;
+    transform: translateY(40px);
+    z-index: 10000;
+    opacity: 0;
+}
+
+.seccion2 .container2 .cardcontent a{
+    font-family:"Montserrat", sans-serif;
+    color: #F20505;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(1) .cardcontent,
+.seccion2 .container2 .slider .slides:nth-child(2) .cardcontent 
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+
+
+@media(max-width:991px){
+
+    
+    .seccion2{
+        background-color: #F2E205;
+
+    }
+
+    .seccion2 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion2 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(1),
+    .seccion2 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion2 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+   
+    
+}
