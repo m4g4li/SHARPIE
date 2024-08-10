@@ -116,7 +116,7 @@ header .toggle.active{
 
 
 
-.inicio.active .container{
+.inicio.active .container2{
     transform: scale(0);/*para que desaparezca el contenido y solo este el menu desplegado*/
 }
 
