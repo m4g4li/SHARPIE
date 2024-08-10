@@ -357,6 +357,16 @@ header .toggle.active{
 
 
 
+.banner2{/*BANNER2*/
+    min-height: 270px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 
 /*sección de redes sociales de la marca*/
 .contacto{
