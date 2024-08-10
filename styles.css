@@ -740,6 +740,11 @@ header .toggle.active{
 
 
 
+
+
+
+
+
 /*sección de redes sociales de la marca*/
 .contacto{
     min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
@@ -991,14 +996,170 @@ footer h6{
         font-size: 30px;
     }
 
-    .container .content h1{
-        font-size: 20px;
+    
+    .inicio{
+        min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+        margin-top: -40px ;
+        margin-bottom: -265px ;
     }
 
+    .inicio video{
+        height: 50%;
+    }
+
+    .container .content{
+        padding-top: 0px;
+    }
+
+    .container .content a{
+        margin-bottom: 0px;
+    }
+
+    .seccion1 .boligrafos1{
+        margin-left: 10px;
+    }
     
+ 
     .seccion2{
         background-color: #F272B8;
     }
+
+    .seccion2 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion2 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(1),
+    .seccion2 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion2 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+
+    .seccion3 .boligrafos3{
+        margin-left: 10px;
+    }
+
+
+    .seccion4{
+        background-color: #F272B8;
+    }
+
+    .seccion4 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion4 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(1),
+    .seccion4 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion4 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+    .seccion5 .boligrafos5{
+        margin-left: 10px;
+    }
+
+
+    .seccion6{
+        background-color: #F2E205;
+
+    }
+
+    .seccion6 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion6 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(1),
+    .seccion6 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion6 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+   
 
     .contacto{
         min-height: 520px;
