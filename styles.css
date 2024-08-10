@@ -32,6 +32,16 @@ section{
     min-height: 640px;/* altura mínima que sera aplicada a cada sección*/
 }
 
+.inicio video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
 .inicio.active::before{
     content: '';
     box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
