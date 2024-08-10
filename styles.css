@@ -131,57 +131,7 @@ header .toggle.active{
 
 
 
-.seccion2{/*sección donde se encuentra la diapositiva infinita*/
-    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
-    background-color: #F20505;
-}
 
-.container2{
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.slider{
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-  
-.slider ul{
-  display: flex;
-  padding: 0;
-  width: 300%;
-  animation: cambio 20s infinite;
-  animation-timing-function: ease;
-}
-  
-.slider li{
-  list-style: none;
-}
-  
-.slider img{
-  width: 100%;
-}
-  
-@keyframes cambio{
-  0%{ margin-left: 0;}
-  30%{ margin-left: 0;}
-  
-  35%{ margin-left: -100%;}
-  65%{ margin-left: -100%;}
-  
-  70%{ margin-left: -200%;}
-  100%{ margin-left: -200%;}
-}
-
-
-
-.seccionb{/*BANNER*/
-    min-height: 210px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url(img/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 
