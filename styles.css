@@ -112,34 +112,7 @@ header .toggle.active{
 
 
 
-.container{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s; /*transión del contenido al menu y viceversa*/
-}
 
-.container .content{
-    position: relative;
-    max-width: 900px;
-    z-index: 100;
-}
-
-.container .content h1{
-    font-family: "Permanent Marker", cursive;
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.container .content h3{
-    font-family:"Montserrat", sans-serif;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-}
 
 .inicio.active .container{
     transform: scale(0);/*para que desaparezca el contenido y solo este el menu desplegado*/
