@@ -164,6 +164,10 @@ header .toggle.active{
     transform: scale(0);/*para que desaparezca el contenido y solo este el menu desplegado*/
 }
 
+.inicio.active .video-slide{
+    transform: scale(0);/*para que desaparezca el VIDEO y solo este el menu desplegado*/
+}
+
 
 
 
