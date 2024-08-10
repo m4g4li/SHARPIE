@@ -26,8 +26,10 @@ section{
 }
 
 .inicio{
-    background-color: #0511F2;
-    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 640px;/* altura mínima que sera aplicada a cada sección*/
 }
 
 .inicio.active::before{
