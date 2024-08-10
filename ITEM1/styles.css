@@ -103,6 +103,8 @@ header .toggle.active{
     padding: 5px 10px;
     margin:  5px 0;
     display: inline-block;
+    text-decoration: none;
+    list-style: none;
     transition: 0.1s;/*tiempo paara que desaparezca el menu deplegado*/
 }
 
