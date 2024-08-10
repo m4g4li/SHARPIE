@@ -628,7 +628,19 @@ footer h6{
         font-size: 30px;
     }
 
-   
+    .inicio{
+        padding: 0px;
+    }
+
+    .product{
+        grid-template-columns: 100%;
+    }
+
+    
+    .seccionc .fondo{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
 
     .contacto{
         min-height: 520px;
