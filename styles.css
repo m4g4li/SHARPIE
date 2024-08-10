@@ -181,11 +181,24 @@ header .toggle.active{
 
 
 
-.seccion1{/*sección creada solo para visualizar como se ve una imagen de fondo*/
-    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url(img/bg.png);
+.seccion1{/*sección creada TEXTO INTRODUCCIÓN 1*/
+    min-height: 150px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #F20505;
+}
+
+.seccion1 .boligrafos1{
+    width: 1000px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+    align-items: center;
+    align-content: center;
 }
 
 
