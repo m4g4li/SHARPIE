@@ -113,9 +113,7 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
     max-width: 250px;
 }
 
-.button-form:hover {
-   
-}
+
 
 .hidden {
     display: none;

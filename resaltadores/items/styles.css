@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --color-pink: #F272B8;
+    --color-blue: #0511F2;
+    --color-yellow: #F2E205;
+    --color-red: #F20505;
+    --color-white: #F2F2F2;
+    --color-black: #0D0D0D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.seccion2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-red);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.product {
+    margin-top: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-white);
+    border-radius: 20px;
+    column-gap: 10px;
+}
+
+.detail {
+    padding: 10px;
+}
+
+.information {
+    padding: 20px;
+}
+
+.image img {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.moreimage {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.moreimage img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.moreimage div {
+    display: flex;
+    border: 2px solid var(--color-white);
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    margin: 0 4px 8px 4px;
+}
+
+.active {
+    border-color: var(--color-red) !important;
+}
+
+.moreimage div:hover {
+    border-color: var(--color-red) !important;
+}
+
+.moreimage div img {
+    width: 70px;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 30px;
+    color: var(--color-black);
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: var(--color-red);
+    gap: 10px;
+}
+
+.rating input {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.rating input::before {
+    content: '\f005';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: var(--color-red);
+    transition: .5s;
+}
+
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input:checked ~ input::before,
+.rating input:checked::before {
+    color: var(--color-red);
+}
+
+.rating span p {
+    color: var(--color-black);
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+.colores {
+    display: flex;
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.amarillo {
+    background-color: var(--color-yellow);
+}
+
+.azul {
+    background-color: var(--color-blue);
+}
+
+.negro {
+    background-color: var(--color-black);
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 35px;
+    opacity: 0.8;
+}
+
+.btn {
+    width: 350px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: transparent;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.table {
+    color: var(--color-black);
+    font-size: 16px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+tbody tr:hover {
+    background: var(--color-yellow);
+}
+
+th {
+    padding: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 5px;
+}
+
+
+.seccionc {
+    background-color: var(--color-red);
+    padding: 0 15px;
+    border-bottom: 30px solid var(--color-red); 
+}
+
+.fondo {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.enlaces {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sitios {
+    text-align: center;
+}
+
+.sitios a {
+    margin: 10px;
+}
+
+.btn-regresar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media(max-width: 991px) {
+    .product {
+        grid-template-columns: 100%;
+    }
+    .seccionc .fondo {
+        margin-left: 0;
+    }
+}
