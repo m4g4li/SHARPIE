@@ -9,7 +9,26 @@
     <title>Resaltadores</title>
 </head>
 <body>
-    <section class="seccionb"></section>
+    <section class="inicio"><!-- primera sección donde se encuentra el header(logo), nav(menu) y el div(container)-->
+    
+        <header>
+            <a href="../index.html" class="logo"><img src="../img/logo.gif" alt="logo" width="100px"></a>
+            <div class="toggle"></div><!-- permite que el icono del menu sea visible y funcional tiene que ver más con el codigo de javascript -->
+        </header>
+
+        <nav><!-- enlaces del menu hamburguesa -->
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../marcadores.html">Marcadores</a></li>
+                <li><a href="#">Bolígrafos</a></li>
+                <li><a href="resaltadores.html">Resaltadores</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Inspírate</a></li>
+                <li><a href="#"><img src="../img/support.png" alt="support"></a></li><!-- en este caso la imagen reemplaza al texto para la sección de suppor. La imagen sirve igual de enlace -->
+            </ul>
+        </nav>
+    </section>
+    
     <div class="container-fluid mt-3 p-0">
         <video width="100%" class="object-fit-md-cover altura" autoplay muted loop>
             <source src="./videos/resaltadorvideo.mp4" type="video/mp4">
@@ -144,6 +163,7 @@
         
     </div>
 
+    <section class="seccionb"></section>
     
     <section class="contacto">
         <ul class="redes">
@@ -170,5 +190,6 @@
     <script src="../menu.js"></script>
     <script src="../newsletter.js"></script>
     <script src="../slider.js"></script>
+
 </body>
 </html>
