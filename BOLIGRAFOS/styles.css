@@ -1,0 +1,1214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    color: #F272B8;
+    color: #0511F2;
+    color: #F2E205;
+    color: #F20505;
+    color: #F2F2F2;
+    color: #0D0D0D; /*Paleta de color, luego de usarla se puede borrar porque no hace nada */
+}
+
+section{
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.inicio{
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 640px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.inicio video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.inicio.active::before{
+    content: '';
+    box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
+}
+
+.inicio.active .menu{
+    opacity: (1);
+    visibility: visible;/*Sea visible el menu*/
+    transition-delay: 0.1s;
+}
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+/* icono de menu hamburguesa*/
+header .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/nav.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+/* icono de menu x*/
+header .toggle.active{
+    background-image: url(img/closed.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    z-index: 10;
+    padding-left: 500px;
+    opacity: (0);
+    visibility:hidden; /*Asi es como logramos que el menu no sea visible hasta presionar menu hamburguesa*/
+}
+
+.menu li a{ /*estilos a los enlaces del menu*/
+    color: #F20505;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 5px 10px;
+    margin:  5px 0;
+    display: inline-block;
+    transition: 0.1s;/*tiempo paara que desaparezca el menu deplegado*/
+}
+
+.menu li:hover a{
+    letter-spacing: 5px; /*efecto sobre los enlace que se vea con separación cada letra*/
+    color: #F2F2F2;
+}
+
+
+
+
+.container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s; /*transión del contenido al menu y viceversa*/
+    background-image: none;
+    min-height: 500px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+
+.container .content{
+    position: relative;
+    z-index: 100;
+    padding-top: 500px;
+}
+
+.container .content a{
+    background-color:transparent;
+    color: #F20505;
+    display: inline-block;
+    font-family:"Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.container .content a:hover{
+    background-color: #F2F2F2;
+}
+
+.inicio.active .container{
+    transform: scale(0);/*para que desaparezca el contenido y solo este el menu desplegado*/
+}
+
+.inicio.active .video-slide{
+    transform: scale(0);/*para que desaparezca el VIDEO y solo este el menu desplegado*/
+}
+
+
+
+
+.banner1{/*BANNER1*/
+    min-height: 270px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.seccion1{/*sección creada TEXTO INTRODUCCIÓN 1*/
+    min-height: 150px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #F20505;
+}
+
+.seccion1 .boligrafos1{
+    width: 1000px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+.seccion2{/*sección CAROUSEL 1*/
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F20505;
+}
+
+.seccion2 .container2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion2 .container2 .slider{
+    position: absolute;
+    inset: 50px 800px 50px 50px; /* Tamaño destinado a las imagenes, 800px se ven cuadradas*/
+    background: #F20505;
+    border-radius: 20px;
+}
+
+.seccion2 .container2 .slider .slides{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 320px;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 10px #0D0D0D;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.seccion2 .container2 .slider .slides:hover {
+    background-image: var(--img-hover);
+}
+
+.seccion2 .container2 .slider .slides:nth-child(1),
+.seccion2 .container2 .slider .slides:nth-child(2) 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(3) 
+{
+    left: calc(50% + 240px);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(4) 
+{
+    left: calc(50% + 500px);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(5) 
+{
+    left: calc(50% + 760px);
+    background-size: cover;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(6) 
+{
+    left: calc(50% + 1020px);
+    background-size: cover;
+    opacity: 0;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons span{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.buttons span::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #F2F2F2;
+    border-left: 4px solid #F2F2F2;
+    transform: rotate(315deg) translate(2px, 2px);
+}
+
+.buttons span:nth-child(2)::before{
+    transform: rotate(135deg) translate(2px, 2px);
+}
+
+.buttons span:active{
+    opacity: 0.5;
+}
+
+
+.seccion2 .container2 .cardcontent{
+    position: relative;
+    padding: 30px;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    max-width: 600px;
+    transition: 0.25s;
+    transition-delay: 0s;
+    transform: translateY(40px);
+    z-index: 10000;
+    opacity: 0;
+}
+
+.seccion2 .container2 .cardcontent a{
+    font-family:"Montserrat", sans-serif;
+    color: #F20505;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.seccion2 .container2 .slider .slides:nth-child(1) .cardcontent,
+.seccion2 .container2 .slider .slides:nth-child(2) .cardcontent 
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+.banner2{/*BANNER2*/
+    min-height: 270px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.seccion3{/*sección creada TEXTO INTRODUCCIÓN 2*/
+    min-height: 150px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #F20505;
+}
+
+.seccion3 .boligrafos3{
+    width: 1000px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+.seccion4{/*sección CAROUSEL 2*/
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F20505;
+}
+
+.seccion4 .container2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion4 .container2 .slider{
+    position: absolute;
+    inset: 50px 800px 50px 50px; /* Tamaño destinado a las imagenes, 800px se ven cuadradas*/
+    background: #F20505;
+    border-radius: 20px;
+}
+
+.seccion4 .container2 .slider .slides{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 320px;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 10px #0D0D0D;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.seccion4 .container2 .slider .slides:hover {
+    background-image: var(--img-hover);
+}
+
+.seccion4 .container2 .slider .slides:nth-child(1),
+.seccion4 .container2 .slider .slides:nth-child(2) 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    background-size: cover;
+}
+
+.seccion4 .container2 .slider .slides:nth-child(3) 
+{
+    left: calc(50% + 240px);
+    background-size: cover;
+}
+
+.seccion4 .container2 .slider .slides:nth-child(4) 
+{
+    left: calc(50% + 500px);
+    background-size: cover;
+}
+
+.seccion4 .container2 .slider .slides:nth-child(5) 
+{
+    left: calc(50% + 760px);
+    background-size: cover;
+}
+
+.seccion4 .container2 .slider .slides:nth-child(6) 
+{
+    left: calc(50% + 1020px);
+    background-size: cover;
+    opacity: 0;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons span{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.buttons span::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #F2F2F2;
+    border-left: 4px solid #F2F2F2;
+    transform: rotate(315deg) translate(2px, 2px);
+}
+
+.buttons span:nth-child(2)::before{
+    transform: rotate(135deg) translate(2px, 2px);
+}
+
+.buttons span:active{
+    opacity: 0.5;
+}
+
+
+.seccion4 .container2 .cardcontent{
+    position: relative;
+    padding: 30px;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    max-width: 600px;
+    transition: 0.25s;
+    transition-delay: 0s;
+    transform: translateY(40px);
+    z-index: 10000;
+    opacity: 0;
+}
+
+.seccion4 .container2 .cardcontent a{
+    font-family:"Montserrat", sans-serif;
+    color: #F20505;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.seccion4 .container2 .slider .slides:nth-child(1) .cardcontent,
+.seccion4 .container2 .slider .slides:nth-child(2) .cardcontent 
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+
+
+
+.banner3{/*BANNER2*/
+    min-height: 270px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.seccion5{/*sección creada TEXTO INTRODUCCIÓN 2*/
+    min-height: 150px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #F20505;
+}
+
+.seccion5 .boligrafos5{
+    width: 1000px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+.seccion6{/*sección CAROUSEL 3*/
+    min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F20505;
+}
+
+
+.seccion6 .container2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion6 .container2 .slider{
+    position: absolute;
+    inset: 50px 800px 50px 50px; /* Tamaño destinado a las imagenes, 800px se ven cuadradas*/
+    background: #F272B8;
+    border-radius: 20px;
+}
+
+.seccion6 .container2 .slider .slides{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 320px;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 10px #0D0D0D;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.seccion6 .container2 .slider .slides:hover {
+    background-image: var(--img-hover);
+}
+
+.seccion6 .container2 .slider .slides:nth-child(1),
+.seccion6 .container2 .slider .slides:nth-child(2) 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    background-size: cover;
+}
+
+.seccion6 .container2 .slider .slides:nth-child(3) 
+{
+    left: calc(50% + 240px);
+    background-size: cover;
+}
+
+.seccion6 .container2 .slider .slides:nth-child(4) 
+{
+    left: calc(50% + 500px);
+    background-size: cover;
+}
+
+.seccion6 .container2 .slider .slides:nth-child(5) 
+{
+    left: calc(50% + 760px);
+    background-size: cover;
+}
+
+.seccion6 .container2 .slider .slides:nth-child(6) 
+{
+    left: calc(50% + 1020px);
+    background-size: cover;
+    opacity: 0;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons span{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.buttons span::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #F2F2F2;
+    border-left: 4px solid #F2F2F2;
+    transform: rotate(315deg) translate(2px, 2px);
+}
+
+.buttons span:nth-child(2)::before{
+    transform: rotate(135deg) translate(2px, 2px);
+}
+
+.buttons span:active{
+    opacity: 0.5;
+}
+
+
+.seccion6 .container2 .cardcontent{
+    position: relative;
+    padding: 30px;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    max-width: 600px;
+    transition: 0.25s;
+    transition-delay: 0s;
+    transform: translateY(40px);
+    z-index: 10000;
+    opacity: 0;
+}
+
+.seccion6 .container2 .cardcontent a{
+    font-family:"Montserrat", sans-serif;
+    color: #F20505;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.seccion6 .container2 .slider .slides:nth-child(1) .cardcontent,
+.seccion6 .container2 .slider .slides:nth-child(2) .cardcontent 
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+
+
+
+.seccionb{/*BANNER*/
+    min-height: 210px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/*sección de redes sociales de la marca*/
+.contacto{
+    min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
+    position: relative;
+    background-color: #0511F2;
+    background-image: url(img/bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 0;
+    
+}
+
+
+.newsletter{
+    background-image: url(img/post-it1.png);/*imagen como fondo*/
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 0px ;
+    text-align: center;
+    background-repeat: no-repeat;/*para que no se repita la imagen de fondo*/
+}
+
+.newsletter h2{
+    font-family:"Montserrat", sans-serif;
+    color: #0511F2;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 110px;
+    margin-right: 750px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /*aparezca primero la casilla de email y luego el botón*/
+    margin-left: 50px;
+    padding-top: 10px; 
+    position: relative;
+    z-index: 9;/*controla que elemento se mostrara o actuara antes*/
+}
+
+input[type="email"] { /*estilos que se le agregan al ingresar la dirección de correo*/
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 16px;
+    max-width: 250px;
+    z-index: 9;
+    
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0D0D0D;
+    font-family:"Montserrat", sans-serif;
+    color: #F2F2F2;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+button:hover {
+    background-color: #F20505;
+}
+
+.hidden {
+    display: none;
+}
+
+#message { /*estilos agregados al mensaje que aparecera luego de ingresar el correo */
+    font-family:"Montserrat", sans-serif;
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.redes{
+    position: absolute;
+    right: 350px;
+    top: 100px;
+    gap: 70px;
+    display: flex;
+    transition: 0.5s;
+    z-index: 10;/*controla que elemento se mostrara o actuara antes*/
+}
+
+.redes li{
+    width: 50px;
+    height: 50px;
+}
+
+.redes li a{
+    display: inline-block;
+    width: 250%;
+    height: 250%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.redes li:hover a{
+    background: #F2E205; 
+}
+
+
+/*.redes li a img{
+    
+
+}*/
+
+
+.redes li a img{
+    transform: scale(0.6);
+}
+
+
+
+
+footer {
+    min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    
+   
+}
+
+footer a img{
+    width: 100px;
+    justify-content: center;
+}
+
+
+footer h6{
+    display: flex;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*agregarle reponsividad a la página*/
+
+@media(max-width:991px){
+    
+    section{
+        padding: 40px;
+    }
+
+    header{
+        padding: 20px 40px;
+    }
+
+    .menu{
+        padding: 0;
+        align-items: center;
+    }
+
+    .menu li a{
+        font-size: 30px;
+    }
+
+    
+    .inicio{
+        min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #0511F2;
+        margin-top: -40px ;
+        margin-bottom: -265px ;
+    }
+
+    .inicio video{
+        height: 50%;
+    }
+
+    .container .content{
+        padding-top: 0px;
+    }
+
+    .container .content a{
+        margin-bottom: 0px;
+    }
+
+    .seccion1 .boligrafos1{
+        margin-left: 10px;
+    }
+    
+ 
+    .seccion2{
+        background-color: #F272B8;
+    }
+
+    .seccion2 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion2 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(1),
+    .seccion2 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion2 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion2 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+
+    .seccion3 .boligrafos3{
+        margin-left: 10px;
+    }
+
+
+    .seccion4{
+        background-color: #F272B8;
+    }
+
+    .seccion4 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion4 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(1),
+    .seccion4 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion4 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion4 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+    .seccion5 .boligrafos5{
+        margin-left: 10px;
+    }
+
+
+    .seccion6{
+        background-color: #F2E205;
+
+    }
+
+    .seccion6 .container2 .slider {
+        position: absolute;
+        inset: 60px 60px 150px 60px;
+    }
+
+    .seccion6 .container2 .slider .slides {
+        width: 80px;
+        height: 80px;
+        top: initial;
+        bottom: -140px;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(1),
+    .seccion6 .container2 .slider .slides:nth-child(2) 
+    {
+        top: initial;
+        bottom: 0;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(3) 
+    {
+    left: 20px;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(4) 
+    {
+    left: 140px;
+    }
+
+    .seccion6 .container2 .slider .slides:nth-child(5) 
+    {
+    left: 260px;
+    }
+
+    .seccion6 .container2 .cardcontent{
+        transform: translateY(-100px);
+    }
+    
+   
+
+    .contacto{
+        min-height: 520px;
+    }
+
+    .newsletter h2{
+        width: 300px;
+        color: #0511F2;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    form{
+        z-index: 10;
+    }
+
+    #message {
+        margin-top: 20px;
+    }
+   
+    .redes{
+        padding-top: 350px;
+        margin-right: -200px;
+        gap: 5px;
+    }
+
+    .redes li a img{
+        width: 50px;
+    }
+
+    .redes li a{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        background-image: url(img/contact2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 40px;
+    }
+
+    footer h6{
+        font-weight: 600;
+        margin-right: 40px;
+    }
+
+
+
+}
+
