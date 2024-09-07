@@ -548,11 +548,7 @@ header .toggle.active{
 
 
 .seccion6{/*sección BOLIGRAFO*/
-    min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F20505;
+    min-height: 500px;/* altura mínima que sera aplicada a cada sección*/
 } 
 
 .seccion6 .container6{
@@ -569,10 +565,10 @@ header .toggle.active{
     margin-right: 15px;
 }
 
-.seccion6 .container6 .text6{
+/*.seccion6 .container6 .text6{
     padding-top: 0px;
     max-width: 500px; 
-}
+}*/
 
 .seccion6 .container6 h2{ 
     font-family: 'Gloria Hallelujah', cursive;
