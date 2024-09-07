@@ -1021,16 +1021,10 @@ footer h6{
 
     .seccion2{
         min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #F20505;
-        background-image: none;
     }
 
     .seccion2 .container2 img{
-        margin-left: -20px;
-    }
-
-    .seccion2 .container2 p{
-
+        margin-left: -40px;
     }
 
     .seccion3{
