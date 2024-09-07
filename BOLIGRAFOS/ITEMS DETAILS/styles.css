@@ -390,11 +390,7 @@ td{
 .contacto{
     min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
     position: relative;
-    background-color: #0511F2;
-    background-image: url(img/bg.png);
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 0;
     
 }
@@ -415,8 +411,9 @@ td{
     color: #0511F2;
     font-weight: 600;
     font-size: 15px;
+    display: flex;
     margin-top: 110px;
-    margin-right: 750px;
+    margin-left: 50px;
 }
 
 form {
