@@ -1047,17 +1047,10 @@ footer h6{
 
     .seccion5{
         min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #0511F2;
-        background-image: none;
     }
 
     .seccion5 .container5 img{
-        margin-right: -20px;
-      
-    }
-
-    .seccion5 .container5 p{
-
+        margin-right: -40px;
     }
 
     .seccionboligrafo{/*sección ANIMACIÓN MARCADOR*/
