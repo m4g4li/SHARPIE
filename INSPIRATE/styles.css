@@ -434,10 +434,6 @@ header .toggle.active{
 
 .seccion5{/*sección MARCADOR*/
     min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0511F2;
 } 
 
 .seccion5 .container5{
@@ -460,7 +456,7 @@ header .toggle.active{
 
 .seccion5 .container5 h2{
     font-family: "Permanent Marker", cursive;
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 0px;
 }
 
