@@ -628,11 +628,6 @@ header .toggle.active{
 
 .seccionresaltador{/*sección ANIMACIÓN RESALTADOR*/
     min-height: 150px;
-    background-image: url(img/line3.png);
-    background-color: #F2F2F2;
-    background-repeat: no-repeat;
-    
-    
 }
 
 /*.seccionresaltador h1{
