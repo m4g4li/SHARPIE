@@ -360,28 +360,17 @@ td{
 
 
 
-.seccionc{
-    background-image: url(img/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-
 .fondo{
     background-color: #F2F2F2;
     border-radius: 20px;
-    max-width: 1070px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 180px;
+    max-width: 1300px;
 }
 
 
 .seccionc .enlaces{
     padding-top: 30px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 
