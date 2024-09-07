@@ -45,9 +45,6 @@ section{
 
 .inicio{
     min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url(img/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .inicio.active::before{
