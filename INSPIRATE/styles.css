@@ -1075,21 +1075,11 @@ footer h6{
 
     .seccion7{
         min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #0511F2;
-        background-image: none;
     }
 
     .seccion7 .container7 img{
-        margin-left: -20px;
-        margin-bottom: -100px;
-      
+        margin-left: -40px;
     }
-
-    .seccion7 .container7 p{
-
-    }
-
-
 
     .seccionresaltador{/*sección ANIMACIÓN MARCADOR*/
         background-color: #F2E205;
