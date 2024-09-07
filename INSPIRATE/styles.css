@@ -358,10 +358,6 @@ header .toggle.active{
 
 .seccion3{/*sección MARCADOR*/
     min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0511F2;
 } 
 
 .seccion3 .container3{
@@ -378,9 +374,9 @@ header .toggle.active{
     margin-right: 15px;
 }
 
-.seccion3 .container3 .text3{
+/*.seccion3 .container3 .text3{
     max-width: 500px; 
-}
+}*/
 
 .seccion3 .container3 h2{
     font-family: "Permanent Marker", cursive;
