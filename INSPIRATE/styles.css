@@ -1103,17 +1103,11 @@ footer h6{
 
     .seccion9{
         min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #0511F2;
-        background-image: none;
     }
 
     .seccion9 .container9 img{
-        margin-right: -20px;
+        margin-right: -40px;
       
-    }
-
-    .seccion9 .container9 p{
-
     }
 
     .contacto{
