@@ -16,6 +16,24 @@
     color: #0D0D0D; /*Paleta de color, luego de usarla se puede borrar porque no hace nada */
 }
 
+body{
+    color: #0D0D0D;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(img/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: url(img/marker_tip.png), auto;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+}
+
 section{
     position: relative;
     width: 100%;
