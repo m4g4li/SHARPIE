@@ -816,8 +816,9 @@ header .toggle.active{
     color: #0511F2;
     font-weight: 600;
     font-size: 15px;
+    display: flex;
     margin-top: 110px;
-    margin-right: 750px;
+    margin-left: 50px;
 }
 
 form {
