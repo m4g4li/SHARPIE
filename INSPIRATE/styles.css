@@ -747,12 +747,7 @@ header .toggle.active{
 
 
 .seccion9{/*sección RESALTADOR*/
-    min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0511F2;
-    background-position: center;
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
 } 
 
 .seccion9 .container9{
@@ -769,9 +764,9 @@ header .toggle.active{
     margin-right: 15px;
 }
 
-.seccion9 .container9 .text9{
+/*.seccion9 .container9 .text9{
     max-width: 500px; 
-}
+}*/
 
 .seccion9 .container9 h2{
     font-family: "Permanent Marker", cursive;
