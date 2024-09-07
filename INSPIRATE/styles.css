@@ -395,11 +395,7 @@ header .toggle.active{
 
 
 .seccion4{/*sección MARCADOR*/
-    min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F20505;
+    min-height: 500px;/* altura mínima que sera aplicada a cada sección*/
 } 
 
 .seccion4 .container4{
