@@ -227,13 +227,10 @@ header .toggle.active{
 .seccion1{/*sección VIDEO*/
     background-image: none;
     min-height: 660px;/* altura mínima que sera aplicada a cada sección*/ 
+    padding: 0px;
 }
 
 .seccion1 video{
-    z-index: 000;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
