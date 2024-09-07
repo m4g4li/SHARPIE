@@ -320,10 +320,6 @@ header .toggle.active{
 
 .seccion2{/*sección EXPLORAR MARCADOR*/
     min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F20505;
 } 
 
 .seccion2 .container2{
