@@ -1001,14 +1001,12 @@ footer h6{
 
     .seccion1{
         min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #0511F2;
+        padding: 0px;
     }
 
-    /* .seccion1 video{
-        margin-top: 25% ;
-        height: 50%;
-        margin-bottom: 25% ;
-    }*/
+    .seccion1 video{
+        width: 100%;
+    }
 
     .seccionmarcador{/*sección ANIMACIÓN MARCADOR*/
         background-color: #F2E205;
