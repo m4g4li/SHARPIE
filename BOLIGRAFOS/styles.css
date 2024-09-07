@@ -832,7 +832,7 @@ button:hover {
 
 .redes{
     position: absolute;
-    right: 350px;
+    right: 100px;
     top: 100px;
     gap: 70px;
     display: flex;
