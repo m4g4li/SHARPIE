@@ -320,9 +320,20 @@ header .toggle.active{
     background-color: #73020C;
 }
 
-
 .silver{
     background: #A6A6A6;
+}
+
+.barrel{
+    background: #6C8EB1;
+}
+
+.white{
+    background: #FFFFFF;
+}
+
+.green{
+    background: #1F7334;
 }
 
 .description{
