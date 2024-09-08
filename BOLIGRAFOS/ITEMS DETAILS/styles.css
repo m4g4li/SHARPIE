@@ -312,6 +312,10 @@ header .toggle.active{
     background-color: #27498C;
 }
 
+.cielo {
+    background-color: #D99518;
+}
+
 
 .description{
     font-family:"Montserrat", sans-serif;
