@@ -336,6 +336,10 @@ header .toggle.active{
     background: #1F7334;
 }
 
+.colors{
+    background: #F272B8;
+}
+
 .description{
     font-family:"Montserrat", sans-serif;
     font-size: 18px;
