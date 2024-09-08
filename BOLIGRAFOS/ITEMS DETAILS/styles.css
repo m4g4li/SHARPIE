@@ -286,14 +286,14 @@ header .toggle.active{
     background-color: transparent;
 }
 
-.amarillo {
-    background-color: #F2E205;
+.negro {
+    background-color: #0D0D0D;
+}
+.rojo {
+    background-color: #F20505;
 }
 .azul {
     background-color: #0511F2;
-}
-.negro {
-    background-color: #0D0D0D;
 }
 
 .description{
