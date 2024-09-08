@@ -296,6 +296,23 @@ header .toggle.active{
     background-color: #0511F2;
 }
 
+.malva {
+    background-color: #BF214B;
+}
+
+.morado {
+    background-color: #A62E92;
+}
+
+.celeste {
+    background-color: #45BFBF;
+}
+
+.cielo {
+    background-color: #27498C;
+}
+
+
 .description{
     font-family:"Montserrat", sans-serif;
     font-size: 18px;
