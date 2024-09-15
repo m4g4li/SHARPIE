@@ -350,3 +350,12 @@ footer h6{
         margin-right: 40px;
     }
 }
+
+/* Estilos para el cambio de imagen segun color */
+#img-marcador {
+    transition: transform 0.5s ease-in-out;
+}
+
+#img-marcador.rotate-scale {
+    transform: scale(1) rotate(4deg); /* Leve escala y rotación */
+}
