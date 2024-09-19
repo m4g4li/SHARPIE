@@ -221,7 +221,6 @@ header .toggle.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F20505;
 }
 
 .seccion2 .container2{
@@ -323,8 +322,8 @@ header .toggle.active{
     position: absolute;
     width: 15px;
     height: 15px;
-    border-top: 4px solid #F2F2F2;
-    border-left: 4px solid #F2F2F2;
+    border-top: 4px solid #F20505;
+    border-left: 4px solid #F20505;
     transform: rotate(315deg) translate(2px, 2px);
 }
 
@@ -404,7 +403,6 @@ header .toggle.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F20505;
 }
 
 .seccion4 .container2{
@@ -506,8 +504,8 @@ header .toggle.active{
     position: absolute;
     width: 15px;
     height: 15px;
-    border-top: 4px solid #F2F2F2;
-    border-left: 4px solid #F2F2F2;
+    border-top: 4px solid #F20505;
+    border-left: 4px solid #F20505;
     transform: rotate(315deg) translate(2px, 2px);
 }
 
@@ -585,7 +583,6 @@ header .toggle.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F20505;
 }
 
 
@@ -688,8 +685,8 @@ header .toggle.active{
     position: absolute;
     width: 15px;
     height: 15px;
-    border-top: 4px solid #F2F2F2;
-    border-left: 4px solid #F2F2F2;
+    border-top: 4px solid #F20505;
+    border-left: 4px solid #F20505;
     transform: rotate(315deg) translate(2px, 2px);
 }
 
