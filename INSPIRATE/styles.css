@@ -335,14 +335,11 @@ header .toggle.active{
     max-width: 400px;
     border-radius: 10px;
     margin-right: 40px;
-
-
-.seccion2 .container2 .text2{
-    background-image: url(img/bg1.png);
-    width: 700px;
-
 }
 
+/*.seccion2 .container2 .text2{
+
+}*/
 
 /*.seccion2 .container2 h2{
     font-family: "Permanent Marker", cursive;
