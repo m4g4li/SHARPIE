@@ -1,11 +1,11 @@
 document.getElementById('black').addEventListener('click', function() {
-    window.location.href = 'item1.html'; // Cambia 'nuevoArchivo.html' por la ruta de tu archivo
-});
-
-document.getElementById('blue').addEventListener('click', function() {
-    window.location.href = 'item11.html'; // Cambia 'nuevoArchivo.html' por la ruta de tu archivo
+    window.location.href = 'item1.html'; 
 });
 
 document.getElementById('red').addEventListener('click', function() {
-    window.location.href = 'item12.html'; // Cambia 'nuevoArchivo.html' por la ruta de tu archivo
+    window.location.href = 'item1red.html'; 
+});
+
+document.getElementById('blue').addEventListener('click', function() {
+    window.location.href = 'item1blue.html';
 });
