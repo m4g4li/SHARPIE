@@ -1,11 +1,11 @@
-document.getElementById('black').addEventListener('click', function() {
+document.getElementById('black1').addEventListener('click', function() {
     window.location.href = 'item1.html'; 
 });
 
-document.getElementById('red').addEventListener('click', function() {
+document.getElementById('red1').addEventListener('click', function() {
     window.location.href = 'item1red.html'; 
 });
 
-document.getElementById('blue').addEventListener('click', function() {
+document.getElementById('blue1').addEventListener('click', function() {
     window.location.href = 'item1blue.html';
 });
