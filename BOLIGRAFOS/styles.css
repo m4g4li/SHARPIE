@@ -202,7 +202,7 @@ header .toggle.active{
     min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
 }
 
-.seccion1 .boligrafos1{
+.seccion1{
     width: 700px;
     background-image: url(img/bg1.png);
     background-repeat: no-repeat;
