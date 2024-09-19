@@ -216,7 +216,7 @@ header .toggle.active{
     font-weight: 500;
     padding-top: 40px;
     padding-bottom: 40px;
-    float: left;
+    float: right;
     align-items: center;
     align-content: center;
 }
