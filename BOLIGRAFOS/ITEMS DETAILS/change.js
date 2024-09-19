@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 //ITEM 1
 
 document.getElementById('black1').addEventListener('click', function() {
@@ -27,3 +29,10 @@ document.getElementById('blue2').addEventListener('click', function() {
 });
 
 //ITEM3
+
+
+
+
+
+
+});
