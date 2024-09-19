@@ -235,7 +235,7 @@ header .toggle.active{
 
 .seccion2 .container2 .slider{
     position: absolute;
-    inset: 50px 500px 50px 50px; /* Tamaño destinado a las imagenes, 800px se ven cuadradas*/
+    inset: 50px 800px 50px 50px; /* Tamaño destinado a las imagenes, 800px se ven cuadradas*/
     background: #F20505;
     border-radius: 20px;
 }
