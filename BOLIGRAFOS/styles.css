@@ -215,6 +215,7 @@ header .toggle.active{
     float: left;
     align-items: center;
     align-content: center;
+    background-image: url(img/bg1.png);
 }
 
 
