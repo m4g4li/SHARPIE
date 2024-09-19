@@ -216,6 +216,8 @@ header .toggle.active{
     align-items: center;
     align-content: center;
     background-image: url(img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
