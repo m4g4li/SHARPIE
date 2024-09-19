@@ -202,8 +202,15 @@ header .toggle.active{
     min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
 }
 
+.seccion1{
+    width: 700px;
+    background-image: url(img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .seccion1 .boligrafos1{
-    width: 800px;
+    width: 500px;
     font-family:"Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -212,9 +219,6 @@ header .toggle.active{
     float: left;
     align-items: center;
     align-content: center;
-    background-image: url(img/bg1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
