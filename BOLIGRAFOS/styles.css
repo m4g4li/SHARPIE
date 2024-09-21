@@ -804,7 +804,6 @@ header .toggle.active{
     position: relative;
     width: 100%;
     height: 0;
-    
 }
 
 
@@ -886,7 +885,7 @@ button:hover {
     gap: 70px;
     display: flex;
     transition: 0.5s;
-    z-index: 10;/*controla que elemento se mostrara o actuara antes*/
+    z-index: 9;/*controla que elemento se mostrara o actuara antes*/
 }
 
 .redes li{
