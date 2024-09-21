@@ -114,6 +114,10 @@ header .toggle.active{
     z-index: 10;
     padding-left: 500px;
     opacity: (0);
+    background: url(img/bg.png);/*fondo al menu*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F2F2F2;
     visibility:hidden; /*Asi es como logramos que el menu no sea visible hasta presionar menu hamburguesa*/
 }
 
@@ -130,7 +134,7 @@ header .toggle.active{
 
 .menu li:hover a{
     letter-spacing: 5px; /*efecto sobre los enlace que se vea con separación cada letra*/
-    color: #F2F2F2;
+    color: #F20505;
 }
 
 
