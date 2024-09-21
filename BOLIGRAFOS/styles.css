@@ -798,8 +798,7 @@ header .toggle.active{
 .contenedor1{
     background: url(img/bg.png);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*sección de redes sociales de la marca*/
