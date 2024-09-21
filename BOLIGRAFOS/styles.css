@@ -593,21 +593,35 @@ header .toggle.active{
 
 
 
-
-.seccion5{/*sección creada TEXTO INTRODUCCIÓN 2*/
-    min-height: 150px;/* altura mínima que sera aplicada a cada sección*/
+.seccion5{/*sección creada TEXTO INTRODUCCIÓN 3*/
+    min-height: 200px;/* altura mínima que sera aplicada a cada sección*/
 }
 
 .seccion5 .boligrafos5{
-    width: 1300px;
+    background-image: url(img/bg1.png); 
+    background-size: cover; 
+    background-position: center; 
+    height: 410px; 
+    width: 410px; 
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    margin-top: 50px;
+    transform: translateY(-50%); 
+}
+  
+.seccion5 .boligrafos5 article{
+    width: 320px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.seccion5 .boligrafos5 article p{
     font-family:"Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 100px;
-    align-items: center;
-    align-content: center;
+    margin-top: 120px;
+    line-height: 25px;
 }
 
 
