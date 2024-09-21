@@ -1064,14 +1064,14 @@ footer h6{
     .container .content a{
         margin-bottom: 90px;
     }
-    
+
 
     .seccion1{/*sección creada TEXTO INTRODUCCIÓN 1*/
         min-height: 635px;/* altura mínima que sera aplicada a cada sección*/
     }
     
     .seccion1 .boligrafos1{
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
  
