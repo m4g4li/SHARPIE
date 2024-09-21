@@ -23,7 +23,6 @@ body{
     background: url(img/bg.png);
     background-size: cover;
     background-attachment: fixed;
-    background-color: #F2F2F2;
     cursor: url(img/marker_tip.png), auto;
 }
 
