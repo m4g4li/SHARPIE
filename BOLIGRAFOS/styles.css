@@ -432,6 +432,9 @@ header .toggle.active{
 
 .seccion4{/*sección CAROUSEL 2*/
     min-height: 650px;/* altura mínima que sera aplicada a cada sección*/
+    background: url(img/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
