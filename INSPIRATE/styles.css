@@ -889,7 +889,7 @@ button:hover {
     gap: 70px;
     display: flex;
     transition: 0.5s;
-    z-index: 10;/*controla que elemento se mostrara o actuara antes*/
+    z-index: 9;/*controla que elemento se mostrara o actuara antes*/
 }
 
 .redes li{
@@ -1135,7 +1135,7 @@ footer h6{
     }
 
     form{
-        z-index: 10;
+        z-index: 9;
     }
 
     #message {
