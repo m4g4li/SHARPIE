@@ -1117,9 +1117,12 @@ footer h6{
         transform: translateY(-100px);
     }
     
+    .seccion3{/*sección creada TEXTO INTRODUCCIÓN 2*/
+        min-height: 435px;/* altura mínima que sera aplicada a cada sección*/
+    }
 
     .seccion3 .boligrafos3{
-        margin-left: 10px;
+        margin-top: 10px;
     }
 
 
