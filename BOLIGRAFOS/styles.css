@@ -199,6 +199,7 @@ header .toggle.active{
 
 .seccion1{/*sección creada TEXTO INTRODUCCIÓN 1*/
     min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/bg.png);
 }
 
 .seccion1 .boligrafos1{
