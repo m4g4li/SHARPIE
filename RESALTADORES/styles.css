@@ -742,7 +742,7 @@ header .toggle.active{
 
 .seccionb{/*BANNER*/
     min-height: 210px;/* altura mínima que sera aplicada a cada sección*/
-    background-image: url(img/banner.png);
+    background-image: url(img/banner.avif);
     background-repeat: no-repeat;
     background-size: cover;
 }
