@@ -532,6 +532,42 @@ footer h6{
     .seccion2 .container2 .cardcontent{
         transform: translateY(-100px);
     }
+
+    
+    .contacto{
+        min-height: 520px;
+    }
+
+    .newsletter h2{
+        width: 300px;
+        color: #0511F2;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    form{
+        z-index: 9;
+    }
+
+    #message {
+        margin-top: 20px;
+    }
+   
+    .redes{
+        padding-top: 350px;
+        margin-right: 0px;
+        gap: 5px;
+    }
+
+    .redes li a img{
+        width: 50px;
+    }
+
+    .redes li a{
+        width: 100%;
+        height: 100%;
+    }
     
    
     
