@@ -149,7 +149,7 @@ header .toggle.active{
     align-items: center;
     transition: 0.5s; /*transión del contenido al menu y viceversa*/
     background-image: none;
-    min-height: 200px;/* altura mínima que sera aplicada a cada sección*/
+    min-height: 500px;/* altura mínima que sera aplicada a cada sección*/
 }
 
 
