@@ -728,7 +728,10 @@ footer h6{
         grid-template-columns: 100%;
     }
 
-    
+    .review {
+        margin-left: 0px;
+    }
+
     .seccionc .fondo{
         margin-left: 0px;
         margin-bottom: 40px;
