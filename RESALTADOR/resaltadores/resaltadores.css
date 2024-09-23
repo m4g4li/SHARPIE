@@ -159,11 +159,7 @@ header .toggle.active{
 .contacto{
     min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
     position: relative;
-    background-color: #0511F2;
-    background-image: url(../img/bg.png);
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 0;
     
 }
@@ -184,7 +180,7 @@ header .toggle.active{
     font-weight: 600;
     font-size: 15px;
     margin-top: 110px;
-    margin-right: 870px;
+    margin-right: 50px;
 }
 
 form {
@@ -235,7 +231,7 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
 
 .redes{
     position: absolute;
-    right: 350px;
+    right: 100px;
     top: 100px;
     gap: 70px;
     display: flex;
