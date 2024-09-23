@@ -290,18 +290,20 @@ header .toggle.active{
     background-color: transparent;
 }
 
-.negro {
-    background-color: #0D0D0D;
-}
-.rojo {
-    background-color: #F20505;
-}
-.azul {
-    background-color: #0511F2;
+.amarillo {
+    background-color: #F2E205;
 }
 
-.malva {
-    background-color: #BF214B;
+.orange {
+    background-color: #FFB60D;
+}
+
+.pastel {
+    background-color: #7E73B5;
+}
+
+.purple {
+    background-color: #DEC8F6;
 }
 
 .morado {
