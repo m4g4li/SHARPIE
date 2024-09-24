@@ -1008,7 +1008,7 @@ footer h6{
 
     
     .inicio{
-        min-height: 100px;/* altura mínima que sera aplicada a cada sección*/
+        min-height: 0px;/* altura mínima que sera aplicada a cada sección*/
         background-color: #F20505;
     }
 
@@ -1021,7 +1021,7 @@ footer h6{
     }
 
     .container .content a{
-        margin-top: 0px;
+        margin-top: 430px;
     }
 
 
