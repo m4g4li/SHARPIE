@@ -741,7 +741,7 @@ header .toggle.active{
 
 
 .seccionb{/*BANNER*/
-    min-height: 210px;/* altura mínima que sera aplicada a cada sección*/
+    min-height: 310px;/* altura mínima que sera aplicada a cada sección*/
     background-image: url(img/banner2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1183,6 +1183,12 @@ footer h6{
         transform: translateY(-100px);
     }
     
+    .seccionb{/*BANNER*/
+        min-height: 210px;/* altura mínima que sera aplicada a cada sección*/
+        background-image: url(img/banner2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .contacto{
         min-height: 520px;
