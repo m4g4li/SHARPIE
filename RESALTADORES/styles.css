@@ -188,7 +188,7 @@ header .toggle.active{
 
 
 .banner1{/*BANNER1*/
-    min-height: 270px;/* altura mínima que sera aplicada a cada sección*/
+    min-height: 370px;/* altura mínima que sera aplicada a cada sección*/
     background-image: url(img/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
