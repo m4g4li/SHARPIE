@@ -1008,14 +1008,12 @@ footer h6{
 
     
     .inicio{
-        min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #0511F2;
-        margin-top: -40px ;
-        margin-bottom: -265px ;
+        min-height: 100px;/* altura mínima que sera aplicada a cada sección*/
+        background-color: #F20505;
     }
 
     .inicio video{
-        height: 100%;
+        height: 65%;
     }
 
     .container .content{
@@ -1023,18 +1021,18 @@ footer h6{
     }
 
     .container .content a{
-        margin-top: 460px;
+        margin-top: 0px;
     }
 
 
-
+ 
 
     .seccion1{/*sección creada TEXTO INTRODUCCIÓN 1*/
-        min-height: 235px;/* altura mínima que sera aplicada a cada sección*/
+        min-height: 135px;/* altura mínima que sera aplicada a cada sección*/
     }
     
     .seccion1 .boligrafos1{
-        margin-top: 300px;
+        margin-top: 30px;
     }
 
  
