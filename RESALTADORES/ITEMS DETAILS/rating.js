@@ -7,7 +7,7 @@ function incrementRating() {
     ratingCountElement.textContent = ratingCount; 
 }
 
-const stars = document.querySelectorAll('.rating input[type="radio"]');
+const stars = document.querySelectorAll('.rating1 input[type="radio"]');
 
 
 stars.forEach(star => {
