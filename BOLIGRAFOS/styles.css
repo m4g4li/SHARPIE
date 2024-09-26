@@ -1078,6 +1078,10 @@ footer h6{
     .seccion2 .container2 .cardcontent{
         transform: translateY(-100px);
     }
+
+    .seccion2 .container2 .cardcontent p{
+        font-size: 10px;
+    }
     
     .seccion3{/*sección creada TEXTO INTRODUCCIÓN 2*/
         min-height: 135px;/* altura mínima que sera aplicada a cada sección*/
