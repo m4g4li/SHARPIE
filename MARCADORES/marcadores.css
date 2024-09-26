@@ -152,17 +152,11 @@ header .toggle.active{
     background-size: cover;
 }
 
-/*sección de redes sociales de la marca*/
-.contacto{
+.contacto{/*sección de redes sociales de la marca*/
     min-height: 400px;/* altura mínima que sera aplicada a cada sección*/
     position: relative;
-    background-color: #0511F2;
-    background-image: url(img/bg.png);
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 0;
-    
 }
 
 .newsletter{
@@ -180,8 +174,9 @@ header .toggle.active{
     color: #0511F2;
     font-weight: 600;
     font-size: 15px;
+    display: flex;
     margin-top: 110px;
-    margin-right: 692px;
+    margin-left: 50px;
 }
 
 form {
@@ -201,11 +196,9 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
     font-family:"Montserrat", sans-serif;
     font-size: 16px;
     max-width: 250px;
-    z-index: 9;
-    
 }
 
-.button-form {
+button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -217,7 +210,7 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
     max-width: 250px;
 }
 
-.button-form:hover {
+button:hover {
     background-color: #F20505;
 }
 
@@ -232,14 +225,17 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
     font-weight: 500;
 }
 
+
+
+
 .redes{
     position: absolute;
-    right: 350px;
+    right: 100px;
     top: 100px;
     gap: 70px;
     display: flex;
     transition: 0.5s;
-    z-index: 1;/*controla que elemento se mostrara o actuara antes*/
+    z-index: 9;/*controla que elemento se mostrara o actuara antes*/
 }
 
 .redes li{
@@ -260,6 +256,13 @@ input[type="email"] { /*estilos que se le agregan al ingresar la dirección de c
 .redes li:hover a{
     background: #F2E205; 
 }
+
+
+/*.redes li a img{
+    
+
+}*/
+
 
 .redes li a img{
     transform: scale(0.6);
