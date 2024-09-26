@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       reviewDiv.innerHTML = `
         <div class="review-rating">${rating}</div>
         <div class="review-name">${name}</div>
-        <p>${comment}</p>
+        <p class="review-comentario">${comment}</p>
         <div class="review-date">${new Date().toLocaleDateString()}</div>
       `;
       
