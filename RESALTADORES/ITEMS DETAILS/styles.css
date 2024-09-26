@@ -366,7 +366,7 @@ header .toggle.active{
     border: transparent;
     transition: all 0.3s ease;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .btn:hover{
     background-color: #F2E205;
