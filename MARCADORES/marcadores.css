@@ -16,6 +16,15 @@ section{
     
 }
 
+.centar{
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+}
+
 .inicio.active::before{
     content: '';
     box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
