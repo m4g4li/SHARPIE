@@ -780,7 +780,7 @@ footer h6{
     }
 
     form{
-        z-index: 10;
+        z-index: 9;
     }
 
     #message {
