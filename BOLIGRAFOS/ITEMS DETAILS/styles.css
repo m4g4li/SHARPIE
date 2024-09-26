@@ -353,7 +353,7 @@ header .toggle.active{
 
 .btn{
     width: 350px;
-    margin-top: 25px;
+    margin-top: 0px;
     cursor: pointer;
     background-color: #F20505;
     color: #F2F2F2;
