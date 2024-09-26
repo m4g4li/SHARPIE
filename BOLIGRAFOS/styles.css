@@ -1028,11 +1028,12 @@ footer h6{
 
 
     .seccion1{/*sección creada TEXTO INTRODUCCIÓN 1*/
-        min-height: 435px;/* altura mínima que sera aplicada a cada sección*/
+        min-height: 135px;/* altura mínima que sera aplicada a cada sección*/
     }
     
     .seccion1 .boligrafos1{
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-left: -10px;
     }
 
  
