@@ -23,7 +23,7 @@ section{
 
 .inicio.active .menu{
     opacity: (1);
-    background-color: #0511F2;
+    background-color: #f2f2f2;
     visibility: visible;/*Sea visible el menu*/
     transition-delay: 0.1s;
 }
