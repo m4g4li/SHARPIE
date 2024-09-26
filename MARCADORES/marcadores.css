@@ -16,6 +16,14 @@ section{
     
 }
 
+.fondo{
+    background-image: url(img/bg.png);
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .centar{
     margin: auto;
     width: 90%;
