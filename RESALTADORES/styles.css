@@ -1087,12 +1087,12 @@ footer h6{
     }
     
     .seccion3{/*sección creada TEXTO INTRODUCCIÓN 2*/
-        min-height: 435px;/* altura mínima que sera aplicada a cada sección*/
+        min-height: 100px;/* altura mínima que sera aplicada a cada sección*/
     }
 
     .seccion3 .boligrafos3{
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 0px;
+        margin-left: -10px;
     }
 
 
@@ -1143,12 +1143,12 @@ footer h6{
     }
     
     .seccion5{/*sección creada TEXTO INTRODUCCIÓN 2*/
-        min-height: 435px;/* altura mínima que sera aplicada a cada sección*/
+        min-height: 135px;/* altura mínima que sera aplicada a cada sección*/
     }
 
     .seccion5 .boligrafos5{
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: -10px;
     }
 
 
