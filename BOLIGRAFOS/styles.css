@@ -1009,13 +1009,13 @@ footer h6{
     
     .inicio{
         min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
-        background-color: #0511F2;
         margin-top: -40px ;
+        background: none;
         margin-bottom: -265px ;
     }
 
     .inicio video{
-        height: 100%;
+        height: 50%;
     }
 
     .container .content{
@@ -1023,7 +1023,7 @@ footer h6{
     }
 
     .container .content a{
-        margin-top: 430px;
+        margin-bottom: 50px;
     }
 
 
@@ -1032,8 +1032,8 @@ footer h6{
     }
     
     .seccion1 .boligrafos1{
-        margin-top: 300px;
-        margin-left: 5px;
+        margin-top: 0px;
+        margin-left: -10px;
     }
 
  
@@ -1088,8 +1088,8 @@ footer h6{
     }
 
     .seccion3 .boligrafos3{
-        margin-top: 10px;
-        margin-left: 0px;
+        margin-top: 0px;
+        margin-left: -10px;
     }
 
 
@@ -1145,7 +1145,7 @@ footer h6{
 
     .seccion5 .boligrafos5{
         margin-top: 10px;
-        margin-left: 0px;
+        margin-left: -10px;
     }
 
 
