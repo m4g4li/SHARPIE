@@ -509,13 +509,14 @@ td{
     font-weight: 600;
     color: #0D0D0D;
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .review-comentario{
     font-family:"Montserrat", sans-serif;
     font-size: 16px;
     color: #0D0D0D;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .review-date{
