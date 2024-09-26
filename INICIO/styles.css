@@ -369,6 +369,16 @@ footer h6{
 }
 
 
+.inicio video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
 /* CAMBIOS PAGINA DE INICIO*/
 .bg-inicio{
     background-image: url('./gif/gif12.gif');
