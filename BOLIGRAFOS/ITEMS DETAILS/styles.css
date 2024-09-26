@@ -229,7 +229,7 @@ header .toggle.active{
     letter-spacing: 1px;
 }
 
-.rating{
+.rating1{
     display: flex;
     align-items: center;
     margin-top: 15px;
@@ -238,7 +238,7 @@ header .toggle.active{
     gap: 10px;
 }
 
-.rating input{
+.rating1 input{
     position: relative;
     width: 20px;
     height: 20px;
@@ -251,7 +251,7 @@ header .toggle.active{
     -webkit-appearance: none;
 }
 
-.rating input::before{
+.rating1 input::before{
     content: '\f005';
     position: absolute;
     font-family: fontAwesome;
@@ -260,14 +260,14 @@ header .toggle.active{
     transition: .5s;
 }
 
-.rating input:hover ~ input::before,
-.rating input:hover::before,
-.rating input:checked ~ input::before,
-.rating input:checked::before{
+.rating1 input:hover ~ input::before,
+.rating1 input:hover::before,
+.rating1 input:checked ~ input::before,
+.rating1 input:checked::before{
     color: var(--c);
 }
 
-.rating p{
+.rating1 p{
     color: #0D0D0D;
     opacity: 0.8;
     margin-top: 15px;
