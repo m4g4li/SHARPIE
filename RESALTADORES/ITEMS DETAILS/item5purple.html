@@ -160,7 +160,40 @@
 
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><!-- Corresponde a las REVIEWS DEL PRODUCTO-->
-                            <div id="reviews-container" class="reviews-container"></div>
+                            
+                            <div class="review-section"></div>
+
+                                <form id="review-form">
+
+                                    <div class="rating">
+                                        <input type="radio" id="star1" name="rating" value="1" required>
+                                        <label for="star1" class="star">★</label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2" class="star">★</label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3" class="star">★</label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4" class="star">★</label>
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5" class="star">★</label>
+                                      </div>
+                                      
+
+                                  <input type="text" id="name" name="name" placeholder="Nombre" required autocomplete="off">
+                                
+                                  <textarea id="comment" name="comment" placeholder="Comentario" required></textarea>
+                                  
+                                  <button type="submit">Enviar reseña</button>
+                                </form>
+
+                                <h3>Reviews</h3>
+                                
+                                <div id="reviews-container">
+                                  <!-- Aquí se mostrarán las reseñas enviadas -->
+                                </div>
+                            </div>
+                              
+                            <div id="reviews-container" class="reviews-container"></div> <!-- REVIEW ANTIGUAS -->
 
                         </div>
                   
