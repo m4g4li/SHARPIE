@@ -355,7 +355,7 @@ header .toggle.active{
 
 .btn{
     width: 350px;
-    margin-top: 25px;
+    margin-top: 0px;
     cursor: pointer;
     background-color: #F20505;
     color: #F2F2F2;
@@ -373,7 +373,25 @@ header .toggle.active{
     color: #0D0D0D;
 }
 
-
+.btn2{
+    width: 350px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #F20505;
+    color: #F2F2F2;
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: transparent;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.btn2:hover{
+    background-color: #F2E205;
+    color: #0D0D0D;
+}
 
 
 table{
