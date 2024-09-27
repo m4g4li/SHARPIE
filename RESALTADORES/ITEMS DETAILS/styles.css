@@ -458,42 +458,30 @@ td{
 
 .rating {
     display: flex; /* Mantiene las estrellas en línea */
-  }
+}
   
-  .rating input {
+.rating input {
     display: none; /* Oculta los inputs de radio */
-  }
+}
   
-  .star {
+.star {
     font-size: 30px; /* Ajusta el tamaño de las estrellas */
     color: #F20505; /* Color de las estrellas no seleccionadas */
     cursor: pointer;
-  }
+}
   
-  /* Colorea todas las estrellas hasta la seleccionada */
-  .rating input:checked ~ .star {
-    color: #F20505; /* Por defecto, las estrellas a la derecha son gris */
-  }
+.rating {
+    display: flex;
+    flex-direction: row-reverse; /* Invertimos el orden de las estrellas */
+    justify-content: flex-start;
+}
   
-  .rating input:checked + .star,
-  .rating input:checked + .star ~ .star {
-    color: gold; /* Colorea las estrellas seleccionadas y a la izquierda */
-  }
-  
-  /* Al pasar el mouse sobre las estrellas */
-  .rating input:hover ~ .star,
-  .rating input:hover + .star {
-    color: gold; /* Color de las estrellas al pasar el mouse */
-  }
-  
-  .rating input:hover + .star {
-    color: gold; /* Colorea la estrella en la que se pasa el mouse */
-  }
-  
-  .rating input:hover + .star ~ .star {
-    color: lightgray; /* Mantiene gris las estrellas después de la seleccionada */
-  }
-  
+/* Colorea todas las estrellas hasta la seleccionada */
+  .rating input:checked ~ label .star,
+  .rating label:hover .star,
+  .rating label:hover ~ label .star {
+    color: gold; /* Colorea las estrellas seleccionadas y las anteriores */
+}
   
   
 .review-rating {
@@ -564,7 +552,6 @@ td{
     font-size: 14px;
     color: #0D0D0D;
 }
-
 
 
 
