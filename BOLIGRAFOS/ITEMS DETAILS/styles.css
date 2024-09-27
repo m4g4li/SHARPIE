@@ -512,8 +512,12 @@ td{
     color: #0D0D0D;
 }
   
+.opinion{
+    min-height: 125px;
+}
 
 
+ 
 
 .review {/*Reviews antiguas*/
     background-color: #F2F2F2;
