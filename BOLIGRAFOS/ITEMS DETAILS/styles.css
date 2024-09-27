@@ -455,41 +455,47 @@ td{
     padding: 10px 0;
 }
 
+
+
 .rating {
     display: flex; /* Mantiene las estrellas en línea */
-}
-  
-.rating input {
-    display: none; /* Oculta los inputs de radio */
-}
-  
-.star {
-    font-size: 30px; /* Ajusta el tamaño de las estrellas */
-    color: #F20505; /* Color de las estrellas no seleccionadas */
-    cursor: pointer;
-}
-  
-.rating {
-    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    gap: 10px;
     flex-direction: row-reverse; /* Invertimos el orden de las estrellas */
     justify-content: flex-start;
 }
-  
-/* Colorea todas las estrellas hasta la seleccionada */
-  .rating input:checked ~ label .star,
-  .rating label:hover .star,
-  .rating label:hover ~ label .star {
-    color: #ff9933; /* Colorea las estrellas seleccionadas y las anteriores */
+
+.rating input {
+    display: none; /* Ocultamos los inputs de tipo radio */
 }
-  
-  
+
+.rating label {
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: #F20505; /* Color de estrellas no seleccionadas */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Cambia el color de las estrellas cuando el input está checked y también de las estrellas anteriores */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ff9933; /* Color de las estrellas seleccionadas */
+}
+
+
+
+
+
 .review-rating {
     font-family:"Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #F20505;
 } 
-
 
 .review-name {
     font-family:"Montserrat", sans-serif;
@@ -511,13 +517,12 @@ td{
     font-size: 14px;
     color: #0D0D0D;
 }
-  
+
+
 .opinion{
     min-height: 125px;
 }
 
-
- 
 
 .review {/*Reviews antiguas*/
     background-color: #F2F2F2;
