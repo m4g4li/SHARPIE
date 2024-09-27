@@ -479,7 +479,7 @@ td{
   .rating input:checked ~ label .star,
   .rating label:hover .star,
   .rating label:hover ~ label .star {
-    color: gold; /* Colorea las estrellas seleccionadas y las anteriores */
+    color: #ff9933; /* Colorea las estrellas seleccionadas y las anteriores */
 }
   
   
