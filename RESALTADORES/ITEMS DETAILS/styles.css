@@ -514,6 +514,10 @@ td{
 }
   
 
+.opinion{
+    min-height: 125px;
+}
+
 
 
 .review {/*Reviews antiguas*/
