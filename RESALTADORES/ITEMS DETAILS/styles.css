@@ -229,7 +229,7 @@ header .toggle.active{
     letter-spacing: 1px;
 }
 
-.rating1{
+.rating1 {
     display: flex;
     align-items: center;
     margin-top: 15px;
@@ -238,36 +238,31 @@ header .toggle.active{
     gap: 10px;
 }
 
-.rating1 input{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
+.rating1 input {
+    display: none; /* Oculta los inputs de radio */
 }
 
-.rating1 input::before{
-    content: '\f005';
-    position: absolute;
-    font-family: fontAwesome;
+.rating1 label {
+    cursor: default; /* Cambia el cursor a default para que no sea clicable */
+}
+
+.rating1 label::before {
+    content: '\f005'; /* Contenido de la estrella */
+    font-family: fontAwesome; /* Asegúrate de que FontAwesome esté cargado */
     font-size: 20px;
-    color: #F20505;
-    transition: .5s;
+    color: #F20505; /* Color para las estrellas vacías (rojo) */
+    transition: none; /* Desactiva la transición para evitar cambios de color */
 }
 
-.rating1 input:hover ~ input::before,
-.rating1 input:hover::before,
-.rating1 input:checked ~ input::before,
-.rating1 input:checked::before{
-    color: var(--c);
+.rating1 input:checked + label::before {
+    color: #F20505; /* Color para las estrellas llenas */
 }
 
-.rating1 p{
+.rating1 input:disabled + label::before {
+    color: #ff9933; /* Asegúrate de que las estrellas deshabilitadas sean rojas */
+}
+
+.rating1 p {
     color: #0D0D0D;
     opacity: 0.8;
     margin-top: 15px;
