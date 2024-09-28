@@ -1,4 +1,4 @@
-fetch('reviews.json')
+fetch('breviews.json')
     .then(response => response.json())
     .then(data => {
         // Inicializar variables para el cálculo

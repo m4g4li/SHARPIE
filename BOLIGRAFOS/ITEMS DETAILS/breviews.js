@@ -1,5 +1,5 @@
  // Cargar los datos de Mockaroo
- fetch('reviews.json')
+ fetch('breviews.json')
  .then(response => response.json())
  .then(data => {
    const container = document.getElementById('reviews-container');
