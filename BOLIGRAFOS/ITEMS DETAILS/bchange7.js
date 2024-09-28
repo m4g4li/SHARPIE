@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ITEM 2
      document.getElementById('black7').addEventListener('click', function() {
-         window.location.href = 'item7.html'; 
+         window.location.href = 'bitem7.html'; 
      });
  
      document.getElementById('red7').addEventListener('click', function() {
-         window.location.href = 'item7red.html'; 
+         window.location.href = 'bitem7red.html'; 
      });
  
      document.getElementById('blue7').addEventListener('click', function() {
-         window.location.href = 'item7blue.html';
+         window.location.href = 'bitem7blue.html';
      });
  });
