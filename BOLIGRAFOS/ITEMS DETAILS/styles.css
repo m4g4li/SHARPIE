@@ -229,42 +229,35 @@ header .toggle.active{
     letter-spacing: 1px;
 }
 
-.rating1{
+.rating1 {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 5px;
-    color: #F20505;
+    margin-bottom: 25px;
     gap: 10px;
 }
 
-.rating1 input{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
+/* Ocultar los inputs */
+.rating1 input {
+    display: none;
 }
 
-.rating1 input::before{
-    content: '\f005';
-    position: absolute;
-    font-family: fontAwesome;
+/* Estilo de las estrellas clickeables (amarillas por defecto) */
+.rating1 label::before {
+    content: '\f005'; /* Unicode para la estrella de FontAwesome */
+    font-family: FontAwesome;
     font-size: 20px;
-    color: #F20505;
-    transition: .5s;
+    color: #ff9933; /* Amarillo por defecto */
 }
 
-.rating1 input:hover ~ input::before,
-.rating1 input:hover::before,
-.rating1 input:checked ~ input::before,
-.rating1 input:checked::before{
-    color: var(--c);
+/* Estilo para las estrellas deshabilitadas (rojas) */
+.rating1 input:disabled + label::before {
+    color: #F20505; /* Rojo para las estrellas deshabilitadas */
+}
+
+/* Estilo de las estrellas cuando están seleccionadas */
+.rating1 input:checked + label::before {
+    color: #ff9933; /* Amarillo para las estrellas seleccionadas */
 }
 
 .rating1 p{
