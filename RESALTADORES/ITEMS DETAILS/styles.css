@@ -233,7 +233,7 @@ header .toggle.active{
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     gap: 10px;
 }
 
