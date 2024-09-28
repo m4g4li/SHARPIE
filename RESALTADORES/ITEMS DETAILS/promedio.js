@@ -1,30 +1,36 @@
 fetch('reviews.json')
     .then(response => response.json())
     .then(data => {
-        
+        // Inicializar variables para el cálculo
         let totalRating = 0;
-        let ratingCount = data.length; 
+        let ratingCount = data.length; // Número total de reseñas
 
-        
+        // Sumar las calificaciones
         data.forEach(review => {
-            totalRating += review.rating; 
+            totalRating += review.rating;
         });
 
-        
-        let averageRating = (totalRating / ratingCount).toFixed(1); // Redondear a 1 decimal
+        // Calcular la calificación promedio
+        let averageRating = (totalRating / ratingCount).toFixed(1); // Redondeado a 1 decimal
 
-        // Actualizar el HTML
+        // Actualizar el texto del promedio y el número de reseñas
         document.getElementById('averageRating').textContent = averageRating;
-        document.getElementById('ratingCount').textContent = ratingCount;
+        document.getElementById('ratingCount').textContent = ratingCount; // Aquí contamos el número de reseñas
 
-        // Actualizar las estrellas en el rating
+        // Actualizar las estrellas
+        const filledStars = Math.floor(averageRating); // Parte entera de la calificación
+        const partialStar = averageRating - filledStars; // Parte decimal
+
+        // Seleccionar estrellas llenas
         const stars = document.querySelectorAll('.rating1 input[type="radio"]');
-        const filledStars = Math.floor(averageRating); // Estrellas llenas basadas en la calificación (sin redondeo)
         stars.forEach((star, index) => {
             if (index < filledStars) {
-                star.checked = true; // Marca las estrellas según la calificación promedio
+                star.checked = true; // Marcar estrellas completas
+            } else if (index === filledStars && partialStar > 0) {
+                star.checked = true; // Marcar la estrella parcial
+                star.nextElementSibling.style.color = `rgba(255, 153, 51, ${partialStar})`; // Ajustar el color para representar la parte decimal
             } else {
-                star.checked = false; // Asegúrate de que las estrellas restantes estén desmarcadas
+                star.checked = false; // No marcar las estrellas restantes
             }
         });
     })

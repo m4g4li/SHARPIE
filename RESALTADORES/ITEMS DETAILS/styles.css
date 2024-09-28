@@ -234,32 +234,30 @@ header .toggle.active{
     align-items: center;
     margin-top: 15px;
     margin-bottom: 5px;
-    color: #F20505;
     gap: 10px;
 }
 
+/* Ocultar los inputs */
 .rating1 input {
-    display: none; /* Oculta los inputs de radio */
+    display: none;
 }
 
-.rating1 label {
-    cursor: default; /* Cambia el cursor a default para que no sea clicable */
-}
-
+/* Estilo de las estrellas clickeables (amarillas por defecto) */
 .rating1 label::before {
-    content: '\f005'; /* Contenido de la estrella */
-    font-family: fontAwesome; /* Asegúrate de que FontAwesome esté cargado */
+    content: '\f005'; /* Unicode para la estrella de FontAwesome */
+    font-family: FontAwesome;
     font-size: 20px;
-    color: #F20505; /* Color para las estrellas vacías (rojo) */
-    transition: none; /* Desactiva la transición para evitar cambios de color */
+    color: #ff9933; /* Amarillo por defecto */
 }
 
-.rating1 input:checked + label::before {
-    color: #F20505; /* Color para las estrellas llenas */
-}
-
+/* Estilo para las estrellas deshabilitadas (rojas) */
 .rating1 input:disabled + label::before {
-    color: #ff9933; /* Asegúrate de que las estrellas deshabilitadas sean rojas */
+    color: #F20505; /* Rojo para las estrellas deshabilitadas */
+}
+
+/* Estilo de las estrellas cuando están seleccionadas */
+.rating1 input:checked + label::before {
+    color: #ff9933; /* Amarillo para las estrellas seleccionadas */
 }
 
 .rating1 p {
