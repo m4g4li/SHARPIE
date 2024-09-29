@@ -15,7 +15,11 @@
     color: #F2F2F2;
     color: #0D0D0D; /*Paleta de color, luego de usarla se puede borrar porque no hace nada */
 }
-
+.modo-oscuro {
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+  }
+  
 section{
     position: relative;
     width: 100%;
