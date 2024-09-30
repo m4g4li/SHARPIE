@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="imagenes/icon.png"><!-- icono de la pestaña -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>SHARPIE</title>
+    </head>
+    <body>
+      <section class="inicio"><!-- primera sección donde se encuentra el header(logo), nav(menu) y el div(container)-->
+    
+        <header>
+            <a href="#" class="logo"><img src="imagenes/logo.gif" alt="logo" width="100px"></a>
+            <div class="toggle"></div><!-- permite que el icono del menu sea visible y funcional tiene que ver más con el codigo de javascript -->
+        </header>
+
+        <nav><!-- enlaces del menu hamburguesa -->
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Marcadores</a></li>
+                <li><a href="#">Bolígrafos</a></li>
+                <li><a href="#">Resaltadores</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Inspírate</a></li>
+                <li><a href="#"><img src="imagenes/support.png" alt="support"></a></li><!-- en este caso la imagen reemplaza al texto para la sección de suppor. La imagen sirve igual de enlace -->
+            </ul>
+        </nav>
+      </section>
+
+
+
+
+
+        <div class="container">
+          <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/carousel1.png" class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/carousel2.png" class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/carousel4.png" class="d-block w-75" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div> <br>
+
+
+
+
+        <div class="contact">
+            <h1>CONTÁCTANOS</h1>
+            <div class="data">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputName4" class="form-label">Nombre</label>
+                      <input type="name" class="form-control" id="inputName4" placeholder="full name">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="name@email.com">
+                    </div> 
+                    <div class="col-md-6">
+                      <label for="inputAddress" class="form-label">Dirección</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Street, City">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputCountry" class="form-label">País</label>
+                      <input type="text" class="form-control" id="inputCountry" placeholder="your country">
+                    </div>
+                    <div class="col-10">
+                        <label for="inputComments" class="form-label">Comentarios</label>
+                        <input type="text" class="form-control" id="inputComments" placeholder="your comments">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Verificar
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </form>
+            </div> <br>
+            
+            
+        </div>
+        <div class="Direc">
+
+         <h1>DIRECTORIO</h1>
+         <div class="paises0">
+          <div class="paises1">
+            <div class="paises">
+
+              <div class="pais" onclick="toggleContact('Argentina')"> Argentina</div>
+              <div id="Argentina" class="tf"> + 54-11 5289 2000 </div>
+  
+              <div class="pais" onclick="toggleContact('Colombia')"> Colombia</div>
+              <div id="Colombia" class="tf"> +01 800 011 8970 </div>
+  
+              <div class="pais" onclick="toggleContact('Espania')"> España</div>
+              <div id="Espania" class="tf"> +34 91 271 81 5 </div>
+  
+              <div class="pais" onclick="toggleContact('Chile')"> Chile </div>
+              <div id="Chile" class="tf"> + 54-11 5889 7000 </div>
+  
+              <div class="pais" onclick="toggleContact('Mexico')"> Mexico</div>
+              <div id="Mexico" class="tf"> +01 220 011 8970 </div>
+              
+              <div class="pais" onclick="toggleContact('USA')"> Estados Unidos</div>
+              <div id="USA" class="tf"> +34 91 271 81 5 </div>
+              
+              <div class="pais" onclick="toggleContact('Canada')"> Canada</div>
+              <div id="Canada" class="tf"> +1-800-668-4575 </div>
+
+              <div class="pais" onclick="toggleContact('UK')"> United Kingdom</div>
+              <div id="UK" class="tf"> +44 2030276892 </div>
+              
+              <div class="pais" onclick="toggleContact('sw')"> Switzerland</div>
+              <div id="sw" class="tf"> +41 44 511 8340 </div>
+              
+              <div class="pais" onclick="toggleContact('Germany')"> Germany</div>
+              <div id="Germany" class="tf"> +49 69380789901 </div>
+              
+              <div class="pais" onclick="toggleContact('Italy')"> Italy</div>
+              <div id="Italy" class="tf"> +39 02 91 48 39 61 </div>
+
+              <div class="pais" onclick="toggleContact('France')"> France</div>
+              <div id="France" class="tf"> +562-2940 2500</div>
+
+            </div>
+
+
+
+
+          </div>
+          
+
+
+         </div>
+          
+          
+         
+        </div>
+
+        <div></div>
+
+        <section class="seccionb"><!-- banner -->
+
+        </section>
+
+        <div class="contenedor">
+          <section class="contacto">
+  
+              <ul class="redes"><!-- redes sociales -->
+                  <li><a href="https://www.instagram.com/sharpie/" target="_blank"><img src="imagenes/instagram.png" alt="instagram" ></a></li>
+                  <li><a href="https://www.facebook.com/Sharpie" target="_blank"><img src="imagenes/facebook.png" alt="facebook"></a></li>
+                  <li><a href="https://x.com/sharpie" target="_blank"><img src="imagenes/twitter.png" alt="twitter"></a></li>
+                  <li><a href="https://www.youtube.com/user/SharpieUS" target="_blank"><img src="imagenes/youtube.png" alt="youtube"></a></li>
+              </ul>
+  
+  
+              <div class="newsletter"><!-- formulario del newsletter -->
+                  <h2>Suscríbete a nuestro Newsletter</h2>
+                  <form id="newsletter-form">
+                      
+                      <input type="email" id="email" name="email" required>
+                      <button type="submit">Suscribirse</button>
+  
+                  </form>
+                  <p id="message" class="hidden"></p> <!-- mensaje que aparecera al ingresar de manera correcta o incorrecta el email-->
+              </div>
+  
+          </section>
+      </div>
+  
+  
+      <footer>
+          <a href="#"><img src="imagenes/logo2.gif" alt="logo"></a>
+          <h6>© 2024 All Rights Reserved</h6>
+      </footer>
+
+
+
+        <script src="menu.js"></script>
+        <script src="newsletter.js"></script>
+        <script src="./script.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+      </body>
+</html>
