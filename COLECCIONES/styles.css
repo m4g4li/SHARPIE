@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    color: #F272B8 ;
+    color: #0511F2;
+    color: #F2E205;
+    color: #F20505;
+    color: #F2F2F2;
+    color: #0D0D0D;
+}
+
+body{
+    background-color: #0511F2;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:"Montserrat", sans-serif;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #F20505;
+    font-weight: 600;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #F2E205;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor1{
+    margin-top: 70px;
+}
+
+.slider{
+  width: 100%;
+  margin: auto;
+  overflow:hidden;
+}
+  
+.slider ul{
+  display: flex;
+  padding: 0;
+  width:300%;
+  animation: cambio 20s infinite;
+  animation-timing-function: ease;
+}
+  
+.slider li{
+  
+  list-style: none;
+}
+  
+.slider img{
+  width: 100%;
+}
+  
+@keyframes cambio{
+  0%{ margin-left: 0;}
+  30%{ margin-left: 0;}
+  
+  35%{ margin-left: -100%;}
+  65%{ margin-left: -100%;}
+  
+  70%{ margin-left: -200%;}
+  100%{ margin-left: -200%;}
+}
+
+.contenedor2{
+
+}
+
+.contenedor2 h1{
+    font-family:"Permanent Marker", cursive;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+    .menu{
+        padding: 20px;
+    }
+    
+    
+    .menu label{
+        display: initial;
+    }
+    
+    
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #F272B8 ;
+        display: none;
+    }
+    
+    
+    .menu .navbar ul li a:hover{
+        color: #0511F2;
+    }
+    
+    
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .contenedor2{
+    }
+
+.contenedor2 h1{
+    text-align: justify;
+    font-size: 30px;
+    margin-left: 20px;
+
+    }
+
+}
