@@ -1,0 +1,1091 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    color: #F272B8 ;
+    color: #0511F2;
+    color: #F2E205;
+    color: #F20505;
+    color: #F2F2F2;
+    color: #0D0D0D;
+
+    cursor: url('img/cursor.png') 12 12, auto;
+}
+
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Permite interactuar con los elementos debajo */
+}
+
+body{
+    color: #0D0D0D;
+    background: url(img/bg.png);
+    background-color: #F2F2F2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:"Montserrat", sans-serif;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+}
+
+.contenedor{
+    background-image: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor2{
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+}
+
+.contenedor2{
+    background-image: url(img/bg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+}
+
+.inicio{
+    min-height: 720px;/* altura mínima que sera aplicada a cada sección*/ 
+}
+
+.inicio.active::before{
+    content: '';
+    box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
+}
+
+.inicio.active .menu{
+    opacity: (1);
+    visibility: visible;/*Sea visible el menu*/
+    transition-delay: 0.1s;
+}
+
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+/* icono de menu hamburguesa*/
+header .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/nav.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+/* icono de menu x*/
+header .toggle.active{
+    background-image: url(img/closed.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    z-index: 10;
+    padding-left: 500px;
+    opacity: (0);
+    background: url(img/bg.png);/*fondo al menu*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F2F2F2;
+    visibility:hidden; /*Asi es como logramos que el menu no sea visible hasta presionar menu hamburguesa*/
+}
+
+.menu li a{ /*estilos a los enlaces del menu*/
+    color: #F20505;
+    font-family:"Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 5px 10px;
+    margin:  5px 0;
+    display: inline-block;
+    transition: 0.1s;/*tiempo paara que desaparezca el menu deplegado*/
+    cursor: pointer;
+}
+
+.menu li:hover a{
+    letter-spacing: 5px; /*efecto sobre los enlace que se vea con separación cada letra*/
+    color: #F2F2F2;
+}
+
+
+
+.marker{
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 250px;
+    margin-bottom: 100px;
+}
+
+.inicio.active .marker{
+    transform: scale(0); /* Desaparezca el marcador en el menu */
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;/*transión del contenido al menu y viceversa*/
+}
+
+.container .content{
+    position: relative;
+    max-width: 900px;
+    z-index: 100;
+}
+
+.container .content h1{
+    font-family: "Permanent Marker", cursive;
+    font-size: 120px;
+    margin-bottom: 10px;
+}
+
+.container .content h3{
+    font-family:"Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.marker-text {/* Marcador texto*/
+    font-family:"Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F20505;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    position: relative;
+}
+
+.marker-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0D0D0D; /* Color del marcador */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: write 8s steps(40, end);
+}
+
+@keyframes write {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.container .content a{  /* botón explorar*/
+    background-color:#F20505;
+    color: #F2F2F2;
+    display: inline-block;
+    font-family:"Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.container .content a:hover{
+    background-color: #F2E205;
+}
+
+.inicio.active .container{
+    transform: scale(0);/*para que desaparezca el contenido y solo este el menu desplegado*/
+}
+
+
+
+
+
+
+
+
+
+.seccion1{/*VIDEO*/
+    height: 100vh;
+    padding: 0px;
+}
+
+.seccion1 video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+.seccionmarcador{/*sección ANIMACIÓN MARCADOR*/
+    min-height: 100px;
+}
+
+/*.seccionmarcador h1{
+    font-family: "Permanent Marker", cursive;
+    color: #F20505;
+    font-size: 60px;
+    padding-left: 70px;
+    padding-top: 110px;
+}*/
+
+.marcador-text {
+    text-decoration: none;
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    margin-left: 160px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.marcador-text {
+    font-size: 40px;
+    color: transparent;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marcador-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0511F2; /* Color del marcador */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: write 7s steps(40, end) infinite;
+}
+
+@keyframes write {
+    from { width: 0; }
+    to { width: 120%; }
+}
+
+
+.creative1{/*imagen que enlaza con la pestaña de marcadores*/
+    height: 0px;
+}
+  
+.products1{
+    position: absolute;
+    right: 0;
+    top: 15px;/*aparezcan abajo 480px o 800*/
+    z-index: 2;
+}
+  
+.products1 ul{
+    list-style: none;   
+}
+  
+.products1 ul li a{
+    display: inline-block;
+    padding: 0px;
+    -webkit-transition: all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition: all 50ms ease;
+}
+
+.products1 ul li a img{
+    cursor: pointer;
+}
+  
+.products1 ul li a:hover{
+    padding: 5px 30px;
+    background: transparent;	
+}
+
+
+
+.seccion2 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.box3 {
+    flex: 1; /* Hace que ambas cajas ocupen el mismo ancho */
+    width: 50%;
+    padding: 20px;
+}
+
+.box3 h2 {
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box3 p {
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    line-height: 1.8;
+}
+
+
+
+.seccion3 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.seccion4 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.seccion5 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container5 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+
+
+
+
+.seccionboligrafo{/*sección ANIMACIÓN BOLIGRAFO*/
+    min-height: 100px;
+}
+
+/*.seccionboligrafo h1{
+    font-family: "Permanent Marker", cursive;
+    color: #F20505;
+    font-size: 60px;
+    padding-left: 70px;
+    padding-top: 110px;
+}*/
+
+.pen-text {/*Texto boligrafo*/
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 280px;
+    margin-top: 30px;
+    height: 50px;
+}
+    
+.pen-text {
+    font-size: 2em;
+    color: transparent;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    
+.pen-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0D0D0D; /* Color del marcador */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: write 7s steps(40, end)infinite; 
+}
+    
+@keyframes write {
+    from { width: 0; }
+    to { width: 120%; }
+}
+
+
+.creative2{/*imagenes que enlaza con la pestaña de boligrafos*/
+    height: 0px;
+}
+  
+.products2{
+    position: absolute;
+    right: 0;
+    top: 15px;/*aparezcan abajo 480px o 800*/
+    z-index: 2;
+}
+  
+.products2 ul{
+    list-style: none;   
+}
+  
+.products2 ul li a{
+    display: inline-block;
+    padding: 0px;
+    -webkit-transition: all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition: all 50ms ease;
+}
+
+.products2 ul li a img{
+    cursor: pointer;
+}
+  
+.products2 ul li a:hover{
+    padding: 5px 30px;
+    background: transparent;	
+}
+
+
+
+
+.seccion6 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container6 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.seccion7 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container7 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+
+
+
+.seccionresaltador{/*sección ANIMACIÓN RESALTADOR*/
+    min-height: 150px;
+}
+
+/*.seccionresaltador h1{
+    font-family: "Permanent Marker", cursive;
+    color: #F20505;
+    font-size: 60px;
+    padding-left: 70px;
+    padding-top: 110px;
+}*/
+
+.resaltador-text{
+    display: flex;
+    height: 40px;
+    margin-top: 30px;
+    height: 50px;
+    z-index: 9;
+}
+
+.resaltador-text {
+    position: relative;
+    font-size: 40px;
+    color: #0D0D0D;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.resaltador-text::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.6em;
+    background: #F272B8;
+    align-content: center;
+    align-items: center;
+    z-index: -1;
+    transform: translateY(-50%);
+    animation: resaltador 3s infinite;
+}
+
+@keyframes resaltador {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.creative3{/*imagenes que enlazan con la pestaña de resaltadores*/
+    height: 0px;
+}
+  
+.products3{
+    position: absolute;
+    right: 0;
+    top: 15px;/*aparezcan abajo 480px o 800*/
+    z-index: 2;
+}
+  
+.products3 ul{
+    list-style: none;   
+}
+  
+.products3 ul li a{
+    display: inline-block;
+    padding: 0px;
+    -webkit-transition: all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition: all 50ms ease;
+}
+
+.products3 ul li a img{
+    cursor: pointer;
+}
+  
+.products3 ul li a:hover{
+    padding: 5px 30px;
+    background: transparent;	
+}
+
+
+
+.seccion8 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container8 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.seccion9 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container9 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+
+.seccion10 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 100px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+
+
+
+.banner{/*BANNER*/
+    min-height: 340px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container7 {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin: 30px 0;
+}
+
+
+.postit{
+    background-image: url(img/post.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.postit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.contact-form {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+    color: #0511F2;
+    font-size: 18px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #000;
+    font-family:"Montserrat", sans-serif;
+    border: none;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #F20505;
+}
+
+.hidden {
+    display: none;
+}
+
+#message { /*estilos agregados al mensaje que aparecera luego de ingresar el correo */
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.contact-info {
+    width: 500px;
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si tiene altura definida */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+}
+
+.redes{
+    position: absolute;
+    gap: 30px;
+    display: flex;
+    transition: 0.5s;
+    z-index: 8;/*controla que elemento se mostrara o actuara antes*/
+    top: 40%;
+}
+
+.redes img {
+    width: 80px; /* Ajusta el tamaño según lo que necesites */
+    height: 80px; /* Puedes especificar un alto fijo si lo deseas */
+}
+
+
+.redes li a{
+    display: inline-block;
+    width: 150%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.redes li:hover a{
+    background: #F2E205; 
+}
+
+
+
+
+footer {
+    min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+footer a img{
+    width: 100px;
+    cursor: pointer;
+}
+
+footer .autor a{
+    display: flex;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+  
+
+
+
+
+
+@media(max-width: 720px){
+
+
+    .contenedor {
+        margin: auto;
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+        flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+    }
+
+    .contenedor{
+        background-image: url(img/bg4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+    
+    .contenedor2{
+        margin: auto;
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+        flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+    }
+    
+    .contenedor2{
+        background-image: url(img/bg5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .toggle {
+        margin-right: 40px;
+    }
+
+    .menu {
+        padding: 0;
+        align-items: center;
+    }
+
+    .menu li a {
+        font-size: 30px;
+    }
+
+    .inicio{
+        min-height: 710px;
+    }
+
+    .marker{
+        right: 10px;
+        opacity: 0.3;
+        top: 80px;
+    }
+
+    .container .content h1{
+        font-size: 20px;
+    }
+
+    .seccion1{
+        min-height: 300px;
+        padding: 0px;
+    }
+
+    .seccion1 video{
+        height: 50%;
+    }
+
+    .seccionmarcador{/*sección ANIMACIÓN MARCADOR*/
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: -310px;
+    }
+
+    .marcador-text{
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .seccion2{
+        margin-top: -250px;
+    }
+
+    .seccion3{
+        
+    }
+
+    .box3 {
+        flex-basis: 100%; /* Cada caja ocupará el 100% del ancho, moviéndose una debajo de la otra */
+    }
+
+    .box3 h2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .box3 p {
+        font-size: 17px;
+        font-family: "Montserrat", serif;
+        line-height: 1.8;
+    }
+
+    .seccion4{
+  
+    }
+
+    .seccion5{
+
+    }
+
+    .seccionboligrafo{/*sección ANIMACIÓN MARCADOR*/
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .pen-text{
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .seccion6{
+
+    }
+
+    .seccion7{
+
+    }
+
+    .seccionresaltador{/*sección ANIMACIÓN MARCADOR*/
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .resaltador-text{
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .seccion8{
+
+    }
+
+    .seccion9{
+
+    }
+
+    .banner{/*BANNER*/
+        min-height: 200px;/* altura mínima que sera aplicada a cada sección*/
+        background-image: url(img/banner2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contacto {/*sección donde se encuentra la diapositiva infinita*/
+        min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
+    }
+    
+    .container7 {
+        margin: 0px 0;
+        min-height: 570px;
+    }
+
+    .contact-info {
+        width: 200px;
+        align-content: center;
+        margin: 0 20px;
+    }
+
+    .contact-form {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-form h2 {
+        margin-bottom: 10px;
+        font-family:"Montserrat", sans-serif;
+        font-weight: 700;
+        color: #0511F2;
+        font-size: 15px;
+    }
+
+    input, textarea {
+        width: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        color: #000;
+        font-family:"Montserrat", sans-serif;
+        border: none;
+    }
+    
+    button {
+        margin-top: 10px;
+        background-color: #0D0D0D;
+        color: #F2F2F2;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #message { /*estilos agregados al mensaje que aparecera luego de ingresar el correo */
+        position: absolute;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .redes{
+        position: absolute;
+        gap: 30px;
+        display: flex;
+        transition: 0.5s;
+        z-index: 8;/*controla que elemento se mostrara o actuara antes*/
+        top: 70%;
+    }
+
+    .redes img {
+        width: 30px; /* Ajusta el tamaño según lo que necesites */
+        height: 30px; /* Puedes especificar un alto fijo si lo deseas */
+    }
+
+    footer {
+        min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+        background-image: url(img/contact2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+    
+    footer a img{
+        width: 100px;
+        margin-left: 40px;
+    }
+    
+    footer .autor a{
+        display: flex;
+        font-family:"Montserrat", sans-serif;
+        color: #0D0D0D;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 60px;
+    }
+
+}

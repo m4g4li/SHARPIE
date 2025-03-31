@@ -1,0 +1,1069 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    color: #F272B8 ;
+    color: #0511F2;
+    color: #F2E205;
+    color: #F20505;
+    color: #F2F2F2;
+    color: #0D0D0D;
+
+    cursor: url('img/cursor.png') 12 12, auto;
+}
+
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Permite interactuar con los elementos debajo */
+}
+
+body{
+    color: #0D0D0D;
+    background: url(img/bg.png);
+    background-color: #F2F2F2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:"Montserrat", sans-serif;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+}
+
+.contenedor{
+    background-image: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor2{
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+}
+
+.contenedor2{
+    background-image: url(img/bg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+}
+
+.inicio{
+    min-height: 100vh;/* altura mínima que sera aplicada a cada sección*/ 
+}
+
+.inicio video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} 
+
+.inicio.active::before{
+    content: '';
+    box-shadow: 0 0 0 1300px transparent; /* Color fondo de menu */
+}
+
+.inicio.active .menu{
+    opacity: (1);
+    visibility: visible;/*Sea visible el menu*/
+    transition-delay: 0.1s;
+}
+
+
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+/* icono de menu hamburguesa*/
+header .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/nav.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+/* icono de menu x*/
+header .toggle.active{
+    background-image: url(img/closed.gif);/* decidi hacer un gif que cambia de negro a rojo porque al pasar en algunas secciones no se podia visualizar al ir navegando por la página*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    z-index: 10;
+    padding-left: 500px;
+    opacity: (0);
+    background: url(img/bg.png);/*fondo al menu*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F2F2F2;
+    visibility:hidden; /*Asi es como logramos que el menu no sea visible hasta presionar menu hamburguesa*/
+}
+
+.menu li a{ /*estilos a los enlaces del menu*/
+    color: #F20505;
+    font-family:"Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 5px 10px;
+    margin:  5px 0;
+    display: inline-block;
+    transition: 0.1s;/*tiempo paara que desaparezca el menu deplegado*/
+    cursor: pointer;
+}
+
+.menu li:hover a{
+    letter-spacing: 5px; /*efecto sobre los enlace que se vea con separación cada letra*/
+    color: #F2F2F2;
+}
+
+.seccion1{/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 100vh;/* altura mínima que sera aplicada a cada sección*/
+    margin-top: 50px;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.box1 {
+    flex: 1; /* Hace que ambas cajas ocupen el mismo ancho */
+    width: 50%;
+    padding: 20px;
+}
+
+.box1 h2 {
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box1 p {
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    line-height: 1.8;
+}
+
+
+
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+.seccion1 form {
+    background-color: #F20505;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos base */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .col {
+    width: 50%;
+}
+
+/* Estilo para etiquetas */
+label {
+    font-weight: bold;
+    color: #0D0D0D;
+}
+
+/* Ajustar tamaño de los inputs */
+.form-control,
+.form-control-file {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+/* Efecto hover y focus */
+.form-control:hover,
+.form-control:focus {
+    border-color: #0D0D0D;
+}
+
+/* Estilo para el botón de envío */
+.seccion1 .btn-primary {
+    background-color: #0D0D0D;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Efecto hover en el botón de envío */
+.seccion1 .btn-primary:hover {
+    background-color: #F272B8;
+    border-color: transparent;
+}
+
+/* Oculta el texto predeterminado del input file */
+input[type="file"] {
+    color: transparent;
+}
+
+/* Estilo del mensaje personalizado */
+.file-label {
+    font-size: 14px;
+    color: #0D0D0D;
+    margin-top: 5px;
+}
+
+
+.seccion2 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 500px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+.acordeon {
+    max-width: 500px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos generales para el acordeón */
+#accordion .card {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px; /* Espacio entre tarjetas */
+    max-width: 500px;
+  }
+  
+  /* Estilo para el encabezado de la tarjeta */
+  #accordion .card-header {
+    background-color: #F20505; /* Color de fondo */
+    color: #F2F2F2; /* Color del texto */
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  /* Estilo para los botones */
+  #accordion .btn-link {
+    color: #F2F2F2; /* Color del texto del botón */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    min-width: 400px;
+    text-align: left;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+  }
+  
+  /* Cambiar color del botón al pasar el mouse */
+  #accordion .btn-link:hover {
+    color: #0D0D0D;
+  }
+  
+  /* Estilo para el cuerpo del acordeón */
+  #accordion .card-body {
+    color: #0D0D0D; /* Color del texto */
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    width: 400px;
+    margin: 0px 10px;
+  }
+  
+
+.seccion4 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.seccion5 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 100vh;/* altura mínima que sera aplicada a cada sección*/
+    
+}
+
+
+.seccion5 .portada{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.popover1 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #F272B8;
+    color: #F2F2F2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20%;
+    left: 75%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.popover2 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #F20505;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 25%;
+    margin-left: -80px; /* Ajusta la posición horizontal */
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.popover3 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #F272B8;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30%; /* Posiciona el popover encima de la imagen */
+    left: 7%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.popover4 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #F20505;
+    color: #F2F2F2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 35%;
+    left: 30%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.popover5 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #0D0D0D;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 48%; /* Posiciona el popover encima de la imagen */
+    left: 15%;
+    margin-left: -80px; /* Ajusta la posición horizontal */
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.popover6 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+
+.popover1 p, .popover2 p, .popover3 p, .popover4 p, .popover5 p, .popover6 p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.seccion5:hover .popover1,
+.seccion5:hover .popover2,
+.seccion5:hover .popover3, 
+.seccion5:hover .popover4,
+.seccion5:hover .popover5,
+.seccion5:hover .popover6{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.seccion6 {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 100px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.banner{/*BANNER*/
+    min-height: 340px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto {/*sección donde se encuentra la diapositiva infinita*/
+    min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
+}
+
+.container7 {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin: 30px 0;
+}
+
+
+.postit{
+    background-image: url(img/post.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.postit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.contact-form {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+    color: #0511F2;
+    font-size: 18px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #000;
+    font-family:"Montserrat", sans-serif;
+    border: none;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #F20505;
+}
+
+.hidden {
+    display: none;
+}
+
+#message { /*estilos agregados al mensaje que aparecera luego de ingresar el correo */
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.contact-info {
+    width: 500px;
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si tiene altura definida */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+}
+
+.redes{
+    position: absolute;
+    gap: 30px;
+    display: flex;
+    transition: 0.5s;
+    z-index: 8;/*controla que elemento se mostrara o actuara antes*/
+    top: 40%;
+}
+
+.redes img {
+    width: 80px; /* Ajusta el tamaño según lo que necesites */
+    height: 80px; /* Puedes especificar un alto fijo si lo deseas */
+}
+
+
+.redes li a{
+    display: inline-block;
+    width: 150%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.redes li:hover a{
+    background: #F2E205; 
+}
+
+
+
+
+footer {
+    min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+    background-image: url(img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+footer a img{
+    width: 100px;
+    cursor: pointer;
+}
+
+footer .autor a{
+    display: flex;
+    font-family:"Montserrat", sans-serif;
+    color: #0D0D0D;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+  
+
+
+
+
+
+@media(max-width: 720px){
+
+
+    .contenedor {
+        margin: auto;
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+        flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+    }
+
+    .contenedor{
+        background-image: url(img/bg4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+    
+    .contenedor2{
+        margin: auto;
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+        flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+    }
+    
+    .contenedor2{
+        background-image: url(img/bg5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .toggle {
+        margin-right: 40px;
+    }
+
+    .menu {
+        padding: 0;
+        align-items: center;
+    }
+
+    .menu li a {
+        font-size: 30px;
+    }
+
+    .inicio{
+        min-height: 300px;/* altura mínima que sera aplicada a cada sección*/
+    }
+
+    .inicio video{
+        height: 100%;
+    }
+
+    .seccion1{
+        margin-top: 10px;
+    }
+
+    .box1 {
+        flex-basis: 100%; /* Cada caja ocupará el 100% del ancho, moviéndose una debajo de la otra */
+    }
+
+    .box1 h2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .box1 p {
+        font-size: 17px;
+        font-family: "Montserrat", serif;
+        line-height: 1.8;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row .col {
+        width: 100%;
+    }
+
+    .seccion1 form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .seccion1 .btn-primary {
+        width: 100%;
+    }
+
+    .seccion2{
+       
+    }
+
+    .acordeon {
+        max-width: 250px; /* Ajusta este valor según sea necesario */
+    }
+    
+    /* Estilos generales para el acordeón */
+    #accordion .card {
+        background-color: transparent;
+        border: none;
+        margin-bottom: 10px; /* Espacio entre tarjetas */
+        max-width: 250px;
+      }
+      
+      /* Estilo para el encabezado de la tarjeta */
+      #accordion .card-header {
+        background-color: #F20505; /* Color de fondo */
+        color: #F2F2F2; /* Color del texto */
+        text-align: center;
+        border-radius: 20px;
+        padding: 5px 10px 10px 5px;
+      }
+      
+      /* Estilo para los botones */
+      #accordion .btn-link {
+        color: #F2F2F2; /* Color del texto del botón */
+        text-decoration: none; /* Sin subrayado */
+        font-weight: bold; /* Negrita */
+        min-width: 250px;
+        text-align: center;
+        font-family: "Montserrat", serif;
+        font-size: 14px;
+        text-align: left;
+      }
+      
+      /* Cambiar color del botón al pasar el mouse */
+      #accordion .btn-link:hover {
+        color: #0D0D0D;
+      }
+      
+      /* Estilo para el cuerpo del acordeón */
+      #accordion .card-body {
+        color: #0D0D0D; /* Color del texto */
+        font-family: "Montserrat", serif;
+        font-size: 17px;
+        width: 250px;
+        margin-left: 10px;
+      }
+
+
+    
+    .seccion4{
+
+    }
+
+    .seccion5{
+        min-height: 200px;
+
+    }
+
+    .seccion5 .portada{
+        z-index: 000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    } 
+    
+    .popover1 {
+        visibility: hidden;
+        width: 100px;
+        background-color: #F272B8;
+        color: #F2F2F2;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 0%;
+        left: 60%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    .popover2 {
+        visibility: hidden;
+        width: 100px;
+        background-color: #F20505;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 0;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 0%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    .popover3 {
+        visibility: hidden;
+        width: 100px;
+        background-color: #F272B8;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 10%; /* Posiciona el popover encima de la imagen */
+        left: 0%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    .popover4 {
+        visibility: hidden;
+        width: 100px;
+        background-color: #F20505;
+        color: #F2F2F2;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 0%;
+        left: 30%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    .popover5 {
+        visibility: hidden;
+        width: 100px;
+        background-color: #0D0D0D;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 46%; /* Posiciona el popover encima de la imagen */
+        left: 25%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    .popover6 {
+        visibility: hidden;
+        width: 100px;
+        background-color: #0D0D0D;
+        color: #F2F2F2;
+        text-align: center;
+        border-radius: 5px;
+        padding: 4px 0;
+        position: absolute;
+        z-index: 1;
+        top: 33%;
+        left: 50%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    
+    
+    .popover1 p, .popover2 p, .popover3 p, .popover4 p, .popover5 p, .popover6 p{
+        font-family:"Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        color: #F2F2F2;
+        text-decoration: none;
+    }
+
+    .banner{/*BANNER*/
+        min-height: 200px;/* altura mínima que sera aplicada a cada sección*/
+        background-image: url(img/banner2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contacto {/*sección donde se encuentra la diapositiva infinita*/
+        min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
+    }
+    
+    .container7 {
+        margin: 0px 0;
+        min-height: 570px;
+    }
+
+    .contact-info {
+        width: 200px;
+        align-content: center;
+        margin: 0 20px;
+    }
+
+    .contact-form {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-form h2 {
+        margin-bottom: 10px;
+        font-family:"Montserrat", sans-serif;
+        font-weight: 700;
+        color: #0511F2;
+        font-size: 15px;
+    }
+
+    #message { /*estilos agregados al mensaje que aparecera luego de ingresar el correo */
+        position: absolute;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    input, textarea {
+        width: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        color: #000;
+        font-family:"Montserrat", sans-serif;
+        border: none;
+    }
+    
+    button {
+        margin-top: 10px;
+        background-color: #0D0D0D;
+        color: #F2F2F2;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .redes{
+        position: absolute;
+        gap: 30px;
+        display: flex;
+        transition: 0.5s;
+        z-index: 8;/*controla que elemento se mostrara o actuara antes*/
+        top: 70%;
+    }
+
+    .redes img {
+        width: 30px; /* Ajusta el tamaño según lo que necesites */
+        height: 30px; /* Puedes especificar un alto fijo si lo deseas */
+    }
+
+    footer {
+        min-height: 220px;/* altura mínima que sera aplicada a cada sección*/
+        background-image: url(img/contact2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+    
+    footer a img{
+        width: 100px;
+        margin-left: 40px;
+    }
+    
+    footer .autor a{
+        display: flex;
+        font-family:"Montserrat", sans-serif;
+        color: #0D0D0D;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 60px;
+    }
+
+}

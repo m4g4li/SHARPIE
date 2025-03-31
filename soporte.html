@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>SHARPIE</title>
+</head>
+<body>
+    <canvas id="marcadorCanvas"></canvas>
+    <section class="inicio"><!-- primera sección donde se encuentra el header(logo), nav(menu) y el div(container)-->
+    
+        <header>
+            <a href="index.html" class="logo"><img src="img/logo.gif" alt="logo" width="100px"></a>
+            <div class="toggle"></div><!-- permite que el icono del menu sea visible y funcional tiene que ver más con el codigo de javascript -->
+        </header>
+
+        <nav><!-- enlaces del menu hamburguesa -->
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="marcadores.html">Marcadores</a></li>
+                <li><a href="boligrafos.html">Bolígrafos</a></li>
+                <li><a href="resaltadores.html">Resaltadores</a></li>
+                <li><a href="colecciones.html">Colecciones</a></li>
+                <li><a href="inspirate.html">Inspírate</a></li>
+                <li><a href="soporte.html"><img src="img/support.png" alt="support"></a></li>
+            </ul>
+        </nav>
+        
+        <video class="video-slide" src="img/sharpie.mp4" autoplay muted loop></video> 
+        
+    </section>
+
+    <div class="contenedor">
+
+
+
+        <section class="seccion1">
+            
+            <div class="container1"><!--FORM-->
+                <div class="box1 one">
+                    <h2>COMUNÍCATE CON NOSOTROS:</h2>
+                    <p>¿Preguntas o comentarios? Por favor contáctanos 
+                        a través del formulario a continuación o llámanos.
+                        Por favor proporciona ahora una imagen de tu producto 
+                        si tienes preguntas o inquietudes sobre el producto. 
+                        Esto nos ayudará a brindarte el mejor soporte y acelerar una resolución.</p>
+                </div>
+
+                <div class="box1 two">
+                  <form id="form">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required autocomplete="off">
+                        </div>
+                        <div class="form-group col">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                    </div>
+                
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <input type="text" class="form-control" id="phone" placeholder="Teléfono" required autocomplete="off">
+                        </div>
+                        <div class="form-group col">
+                            <select id="inputCountry" class="form-control" required>
+                                <option value="">Elige tu país...</option>
+                                <option>Australia</option>
+                                <option>Canadá</option>
+                                <option>Colombia</option>
+                                <option>Estados Unidos</option>
+                                <option>México</option>
+                                <option>Reino Unido</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <label for="inputAddress">Dirección</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Dirección" required autocomplete="off">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="inputComment">Comentario</label>
+                        <textarea class="form-control" id="inputComment" rows="4" placeholder="Escribe tu comentario aquí..." required></textarea>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="inputFile">Subir archivo</label>
+                        <input type="file" class="form-control-file" id="inputFile">
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                
+                </div>
+            </div>
+
+        </section>
+
+        <section class="seccion2">
+            
+            <div class="container2">
+              <div class="box1 two">
+                <h2>PREGUNTAS FRECUENTES:</h2>
+                <p>Estamos aquí para ayudarte. Nuestro objetivo es ofrecerte una experiencia sin complicaciones, 
+                    asegurando que tengas toda la información necesaria antes y después de realizar tu compra. 
+                    Si tienes alguna consulta adicional, no dudes en contactarnos directamente; nuestro equipo 
+                    de soporte está listo para ayudarte en lo que necesites.</p>
+              </div>
+
+              <div class="box1 two">
+                
+                <div id="accordion" class="acordeon">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          ¿Qué hace que un marcador sea permanente?
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                        Un marcador puede clasificarse como permanente si: <br><br>
+      
+                      - Se adhiere a la mayoría de superficies o es resistente al agua. <br><br>
+      
+                      - Utiliza tintes o pigmentos. <br> <br>
+      
+                      Los tintes o los pigmentos utilizados, que dan el color a la tinta (colorantes), 
+                      determinan la resistencia a la decoloración de una marca, y la combinación de componentes 
+                      utilizados en la formulación de la tinta le confiere propiedades permanentes.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Hay varios estilos de marcadores Sharpie. ¿La tinta es la misma en cada uno de los diferentes estilos?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                        La tinta negra en los modelos Punta Fina, Ultra Fina, Doble Punta, Cincel, Retractable, 
+                        Mini y Super es tinta permanente. Los principales disolventes son alcoholes, pero también 
+                        contienen éter monobutílico de etilenglicol. Todos los demás colores de tinta Sharpie son 
+                        tinta Permchrome. Para estos, los principales disolventes son también alcoholes, pero no se 
+                        utilizan éteres de glicol.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          ¿Puedo utilizar los marcadores Sharpie sobre vajilla de cristal, horno o cerámica?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                      Si bien los marcadores Sharpie llevan el sello AP, que indica que no son tóxicos, no recomendamos 
+                      utilizarlos en zonas de artículos que puedan entrar en contacto con los alimentos o la boca. 
+                      No se probó la resistencia al horno de los productos Sharpie y estos no deben utilizarse en ningún 
+                      lugar donde el consumidor pueda ingerir la tinta. Solo recomendamos utilizar los marcadores Sharpie 
+                      en cerámica o cristalería cuando el producto se usa con fines decorativos o de exhibición.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          ¿Por qué el marcador Sharpie no está disponible en color blanco?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                        Para los marcadores blancos, se necesita una tinta pigmentada, en lugar de una a base de tinte, 
+                        para conseguir la opacidad requerida. Con la tecnología de tintas que contamos, no hemos podido 
+                        fabricar un marcador o bolígrafo que escriba y/o marque con uniformidad la tinta blanca. 
+                        Sin embargo, en el futuro, a medida que se desarrolle la nueva tecnología de tintas, es muy 
+                        posible que podamos fabricar un marcador de tinta blanca pigmentada. Hasta entonces, 
+                        te recomendamos que pruebes el marcador Sharpie Paint color blanco de Newell Brands. 
+                        Es un marcador de acción de válvula, que requiere una acción de bombeo.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          ¿Cuánto dura un marcador permanente?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                      No tenemos una fórmula matemática para calcular cuánto tiempo “durará” un marcador permanente. Si se expone al 
+                      aire libre en una superficie no porosa, las marcas de un marcador de base de tinte desaparecerán quizás en tres 
+                      o cuatro meses. <br> <br> Si se expone en interiores sobre una superficie porosa, como el lienzo o el papel de un artista, 
+                      cabe esperar que las marcas de un marcador con base de tinte duren varios años. Las resinas o los tensioactivos 
+                      dan a la tinta la capacidad de adherirse a diversas superficies. De esta manera, contamos con marcadores para 
+                      superficies no porosas y brillantes, marcadores para superficies aceitosas o húmedas y marcadores que pueden 
+                      soportar el calor extremo.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿En cuántos colores están disponibles los marcadores Sharpie?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                        
+                        En este momento, Sharpie ofrece 49 colores vibrantes y únicos: <br><br>
+                        
+                        - El marcador Punta Fina está disponible en 41 colores: 5 de neón y 3 metálicos.<br>
+                        
+                        - El marcador Punta Ultra Fina está disponible en 42 colores.<br>
+                        
+                        - El marcador Doble Punta está disponible en 20 colores.<br>
+                        
+                        - El marcador Retractable está disponible en 12 colores.<br>
+                        
+                        - El marcador Mini está disponible en 8 colores.<br>
+                        
+                        - El marcador Punta Cincel está disponible en 8 colores.<br>
+                        
+                        - El marcador Super Sharpie está disponible en 4 colores.<br>
+                        
+                        - Los marcadores Super Sharpie Doble Punta y Professional están disponibles en 3 colores.<br>
+                        
+                        - El marcador Industrial está disponible en 1 color.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="card">
+                    <div class="card-header" id="headingSeven">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          ¿Cómo puedo evitar que la tinta se corra cuando uso mi resaltador sobre un documento?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
+                      <div class="card-body"> <br>
+                        Te recomendamos utilizar uno de nuestros productos con tinta Smear Guard® (Pocket, Tank, 
+                        Retractable, Gel y Clear View). Si quieres protegerte al 100 % contra las manchas, prueba 
+                        el resaltador Sharpie Gel.
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                </div>
+
+              </div>
+
+      
+            </div>
+        </section>
+
+
+        <section class="seccion4">
+
+            <div class="container4"><!-- MAPA-->
+                <div class="box1 three">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.4048658677534!2d-99.20803232478573!3d19.42938928184939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d326193bb79%3A0xc9f4d649216cb94d!2sNewell%20Brands%20de%20M%C3%A9xico%20S.A.%20De%20C.V.!5e1!3m2!1ses!2ssv!4v1730479229347!5m2!1ses!2ssv" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="box1 four">
+                    <h2>ATENCIÓN AL CONSUMIDOR:</h2>
+                    <p> Nueva dirección de Newell Brands de México:
+
+                        Newell Brands de México S.A. de C.V.: Blvd. Manuel Ávila Camacho 
+                        No. 32 Piso 14, Col. Lomas de Chapultepec III Sección, Alc.
+                         Miguel Hidalgo, Ciudad de México, México, C.P. 11000. Atención 
+                         al consumidor: 55 5729 3450 / 800 500 8680. RFC: SME570928G90.</p>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section class="seccion5">
+                
+          <img class="portada"  src="img/map.png"  alt="">
+
+            <div class="popover1"><p>AUSTRALIA: <br>
+              +54-11 5289 2000
+            </p></div>
+
+            <div class="popover2"><p>CANADÁ: <br>
+              1-800-668-4575
+            </p></div>
+
+            <div class="popover3"><p>MÉXICO: <br>
+              +52 55 5729-3450 / 01 800 500 8680
+            </p></div>
+
+            <div class="popover4"><p>COLOMBIA: <br>
+              01 800 011 8970
+            </p></div>
+
+            <div class="popover5"><p>UNITED STATES: <br>
+              1-800-346-3278
+            </p></div>
+
+            <div class="popover6"><p>UNITED KINGDOM: <br>
+              +44 2030276892
+            </p></div>
+           
+        </section>
+
+        <section class="seccion6"></section>
+
+    </div>
+
+
+    <section class="banner"><!-- banner -->
+    </section>
+
+
+    <div class="contenedor2">
+
+        <section class="contacto">
+
+            <div class="container7"><!-- ROLLERBALL-->
+
+                <div class="box1 fifteen">
+
+                        <div class="postit">
+                            <div class="contact-form">
+            
+                                    <h2 class="title">Suscribete al newsletter</h2>
+                                    <form id="newsletter-form" autocomplete="off">
+            
+                                        <input type="email" id="email" name="email" required> <br>
+                                        <button type="submit">Suscribirse</button>
+            
+                                    </form>
+                                    
+                            </div>
+                        </div>
+
+                        <p id="message" class="hidden"></p>
+                      
+
+                </div>
+
+                <div class="box1 sixteen">
+                    
+                        <div class="contact-info">
+        
+                            <ul class="redes"><!-- redes sociales -->
+                                <li><a href="https://www.instagram.com/sharpie/" target="_blank"><img src="img/instagram.png" alt="instagram" ></a></li>
+                                <li><a href="https://www.facebook.com/Sharpie" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+                                <li><a href="https://x.com/sharpie" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
+                                <li><a href="https://www.youtube.com/user/SharpieUS" target="_blank"><img src="img/youtube.png" alt="youtube"></a></li>
+                            </ul>
+            
+                        </div>
+                
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+
+        <a href="#"><img src="img/logo2.gif" alt="logo"></a>
+        <p class="autor">
+            <a href="https://m4g4li.github.io/MAGALIBERGANZA/" target="_blank">Copyright © 2025 Magali Berganza. All rights reserved.</a>
+        </p>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script><!-- Enlace de la librería ScrollReveal --> 
+    <script src="menu.js"></script>
+    <script src="newsletter.js"></script>
+    <script src="animation.js"></script>
+    <script src="marker.js"></script>
+    <script src="form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
