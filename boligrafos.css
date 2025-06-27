@@ -646,7 +646,7 @@ footer .autor a{
     }
     
     .contacto {/*sección donde se encuentra la diapositiva infinita*/
-        min-height: 550px;/* altura mínima que sera aplicada a cada sección*/
+        min-height: 450px;/* altura mínima que sera aplicada a cada sección*/
     }
     
     .container7 {
