@@ -676,7 +676,7 @@ footer .autor a{
 
     input, textarea {
         width: 80%;
-        padding: 5px;
+        padding: 1px;
         margin-top: 5px;
         border-radius: 5px;
         color: #000;
@@ -709,7 +709,7 @@ footer .autor a{
         display: flex;
         transition: 0.5s;
         z-index: 8;/*controla que elemento se mostrara o actuara antes*/
-        top: 60%;
+        top: 70%;
     }
 
     .redes img {
