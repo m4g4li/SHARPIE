@@ -709,7 +709,7 @@ footer .autor a{
         display: flex;
         transition: 0.5s;
         z-index: 8;/*controla que elemento se mostrara o actuara antes*/
-        top: 70%;
+        top: 60%;
     }
 
     .redes img {
